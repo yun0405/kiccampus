@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset=" utf-8"/>
+        <title>나는 제목</title>
+
+    </head>
+
+    <body>
+
+        <!--표-->
+        <table border="1" width = "500" height="200">
+            
+            <!--행-->
+            <tr><!--1행-->
+
+                <td colspan= "2">1행 1열</td><!--열(항상 열의 갯수는 동일하게 한다.)-->
+                <!--<td >1행 2열</td>-->
+                <td rowspan = "2">1행 3열</td> 
+
+            </tr>
+
+            <tr><!--2행-->
+
+                <td rowspan="2">2행 1열</td><!-- colspan 을 통해 셀을 합칠 수 있다.-->
+                <td>2행 2열</td>
+               <!-- <td ">2행 3열</td>-->
+
+            </tr>
+
+            <tr><!--3행-->
+
+                <td colspan = "2">3행 2열</td>
+                <!--<td>2행 2열</td>
+                <td>2행 2열</td>-->
+            </tr>
+
+        </table>
+
+        
+
+     
+    </body>
+
+</html>
