@@ -1,0 +1,455 @@
+markUp
+<기능>내용</기능>
+
+<기능/>
+
+<기능 속성 = "값"> 내용 </기능>
+
+기능,속성 - 영어 / 대소문자를 가리지않음
+
+
+html 의 기본 형식
+
+<!DOCTYPE html>
+
+<html> // 연다.
+<title>HTML Tutorial</title>
+
+
+<head> 
+	//문서 전체 선언
+</head>
+
+
+<body> //body 안에 내용이 들어간다.
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body> // body 을 끝낸다.
+</html> //열었으면 닫아야한다.
+
+-> 저장명:파일.html(htl) => 브라우저에서 확인 가능
+
+Example Explained
+The <!DOCTYPE html> declaration defines that this document is an HTML5 document
+The <html> element is the root element of an HTML page
+The <head> element contains meta information about the HTML page
+The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+The <h1> element defines a large heading
+The <p> element defines a paragraph
+
+<html><head></head></html>  o
+<html><head></html></head>  x
+
+
+<!-- 주석 내용 -->
+
+
+ex01.html
+<!DOCTYPE html>
+<html> 
+<head> 	
+</head>
+<body> 
+Hello HTML!
+</body> 
+</html> 
+
+ex02.html
+<!DOCTYPE html>
+<html>
+    <head><!-- 선언 -->
+        <title>난 제목</title>
+        <mata charset="utf-8"/> <!--한글이 안될때는 이렇게 넣으면 해결된다.(일본어도 가능하다)-->
+    </head>
+
+    <body> <!-- 내용 -->
+        Hello HTML!
+        안녕
+    </body>
+</html>
+
+ex03.html
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <mata charset = "utf-8"/>
+        <title>나는 제목</title>
+    </head>
+
+    <body>
+        <!--제목글-->
+        <h1>제목글</h1>
+        <h2>제목글</h2>
+        <h3>제목글</h3>
+        <h4>제목글</h4>
+        <h5>제목글</h5>
+        <h6>제목글</h6><!--h1~h6까지가 기본 문법 넘어간다고해서 오류가 발생하지는 않고 그냥 무시한다.-->
+        <h7>제목글</h7>
+    </body>
+
+</html>
+
+ex04.html
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset=" utf-8"/>
+        <title>나는 제목</title>
+    </head>
+
+    <body>
+        <!-- 문단(문단과 문단 사이에는 엔터가 들어간다.) -->
+    
+        <div><!-- 문단 별로 효과를 줄 수 있음 -->
+            내용1-1<br/>
+            내용1-2<br/>
+            내용1-3<br/>
+
+        </div>
+
+        <p><!-- p를 사용하면 엔터 키를 하나 더 먹음 -->
+            내용2-1<br/>
+            내용2-2<br/>
+            내용2-3<br/>
+
+        </p>
+
+    </body>
+
+</html>
+
+05.html
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset=" utf-8"/>
+        <title>나는 제목</title>
+
+    </head>
+
+    <body>
+        <pre><!--참고 문헌(인용)-->
+            Hello HTML 
+            Hello HTML
+
+        </pre>
+
+        <blockquote>
+            Hello HTML 
+            Hello HTML
+            
+        </blockquote>
+    </body>
+
+</html>
+
+ex06.html
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset=" utf-8"/>
+        <title>나는 제목</title>
+
+    </head>
+
+    <body>
+        <!-- 글자 형태-->
+        <div>this text is normal</div>
+        <div><d>this text is text</div>
+        <div><i>this text is text</div>
+            
+        <!--첨자-->>
+        <div><sub>this</sub>text is text</div>
+        <div><sub>this</sub>text is text</div>
+    </body>
+
+</html>
+
+ex07.html
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset=" utf-8"/>
+        <title>나는 제목</title>
+
+    </head>
+
+    <body>
+        <!-- 목록 출력-->
+        <!-- 목록 출력의 종류
+            1. 순서가 있는 목록
+            2. 순서가 없는 목록
+            3. 사전식
+        -->
+
+        <!--순서가 있는 목록-->
+        <ol type="i" start = "1"><!-- type 타입 start 시작 순서-->
+            <!--list-->
+            <li>사과1</li>
+            <li>사과2</li>
+            <li>사과3</li>
+            <li>사과4</li>
+
+        </ol>
+
+        <!--순서가 없는 목록-->
+        <ul type="square"><!-- 점을 사각으로 표현 -->
+            <!--순서가 아니라 점으로 표현됨-->
+            <li>사과1</li>
+            <li>사과2</li>
+            <li>사과3</li>
+            <li>사과4</li>
+
+        </ul>
+
+        <!--사전식-->
+        <dl>
+            <dt>사과</dt>
+            <dd>사과는 맛있다</dd>
+            <dt>수박</dt>
+            <dd>수박은 맛있다</dd>
+            <dt>참외</dt>
+            <dd>참외는 맛있다</dd>
+            <dt>딸기</dt>
+            <dd>딸기는 맛있다</dd>
+            
+        </dl>
+    </body>
+
+</html>
+
+ex08.html
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset=" utf-8"/>
+        <title>나는 제목</title>
+
+    </head>
+
+    <body>
+   
+        <!--순서가 없는 목록-->
+        <ul type="square"><!-- 점을 사각으로 표현 -->
+            <!--순서가 아니라 점으로 표현됨-->
+            <li>사과1</li>
+            <li>
+                <ul>
+                    <li>사과1</li>
+                    <li>사과2</li>
+                    <li>사과3</li>
+                </ul>
+            </li>
+            <li>참외</li>
+            <li>
+                <ul>
+                    <li>참외1</li>
+                    <li>참외2</li>
+                    <li>참외3</li>
+                </ul>
+            </li>
+        </ul>
+
+
+    </body>
+
+</html>
+
+ex09.html
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset=" utf-8"/>
+        <title>나는 제목</title>
+
+    </head>
+
+    <body>
+
+        <!--표-->
+        <table border="1" width = "500" height="200">
+            
+            <!--행-->
+            <tr><!--1행-->
+
+                <td width = "50" >1행 1열</td><!--열(항상 열의 갯수는 동일하게 한다.)-->
+                <td>1행 2열</td>
+                <td>1행 3열</td>
+
+            </tr>
+
+            <tr><!--2행-->
+
+                <td>2행 1열</td><!-- width 와 height는 행의 가장 큰 부분을 따라간다.(개별 지정이 불가능하다.)-->
+                <td>2행 2열</td>
+                <td>2행 3열</td>
+
+            </tr>
+
+            <tr><!--3행-->
+
+                <td>3행 1열</td>
+                <td>3행 2열</td>
+                <td>3행 3열</td>
+
+            </tr>
+
+        </table>
+
+    </body>
+
+</html>
+
+ex10.html
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset=" utf-8"/>
+        <title>나는 제목</title>
+
+    </head>
+
+    <body>
+
+        <!--표-->
+        <table border="1" width = "500" height="200">
+            
+            <!--행-->
+            <tr><!--1행-->
+                <!--th를 사용하면 머릿글을 만들 수 있다.-->
+                <th width = "50" >1행 1열</th><!--열(항상 열의 갯수는 동일하게 한다.)-->
+                <th>1행 2열</th>
+                <th>1행 3열</th>
+
+            </tr>
+
+            <tr><!--2행-->
+
+                <td>2행 1열</td><!-- width 와 height는 행의 가장 큰 부분을 따라간다.(개별 지정이 불가능하다.)-->
+                <td>2행 2열</td>
+                <td>2행 3열</td>
+
+            </tr>
+
+            <tr><!--3행-->
+
+                <td>3행 1열</td>
+                <td>3행 2열</td>
+                <td>3행 3열</td>
+
+            </tr>
+
+        </table>
+
+    </body>
+
+</html>
+
+ex11.html
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset=" utf-8"/>
+        <title>나는 제목</title>
+
+    </head>
+
+    <body>
+
+        <!--표-->
+        <table border="1" width = "500" height="200">
+            
+            <!--행-->
+            <tr><!--1행-->
+                <!--th를 사용하면 머릿글을 만들 수 있다.-->
+                <th>1행 1열</th><!--열(항상 열의 갯수는 동일하게 한다.)-->
+                <th>1행 2열</th>
+                <th>1행 3열</th>
+
+            </tr>
+
+            <tr><!--2행-->
+
+                <td align = "center">2행 1열</td><!-- width 와 height는 행의 가장 큰 부분을 따라간다.(개별 지정이 불가능하다.)-->
+                <td align = "left">2행 2열</td>
+                <td align = "right">2행 3열</td>
+
+            </tr>
+
+            <tr><!--3행-->
+
+                <td valign = "top">3행 1열</td>
+                <td valign = "middle">3행 2열</td>
+                <td valign = "bottom">3행 3열</td>
+
+            </tr>
+
+        </table>
+
+    </body>
+
+</html>
+
+ex13.html
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset=" utf-8"/>
+        <title>나는 제목</title>
+
+    </head>
+
+    <body>
+
+        <!--표-->
+        <table border="1" width = "500" height="200">
+            
+            <!--행-->
+            <tr><!--1행-->
+
+                <td colspan= "2">1행 1열</td><!--열(항상 열의 갯수는 동일하게 한다.)-->
+                <!--<td >1행 2열</td>-->
+                <td rowspan = "2">1행 3열</td> 
+
+            </tr>
+
+            <tr><!--2행-->
+
+                <td rowspan="2">2행 1열</td><!-- colspan 을 통해 셀을 합칠 수 있다.-->
+                <td>2행 2열</td>
+               <!-- <td ">2행 3열</td>-->
+
+            </tr>
+
+            <tr><!--3행-->
+
+                <td colspan = "2">3행 1열</td>
+                <!--<td>2행 2열</td>
+                <td>2행 2열</td>-->
+            </tr>
+
+        </table>
+
+        
+
+     
+    </body>
+
+</html>
