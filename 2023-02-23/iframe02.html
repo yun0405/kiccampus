@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" width ="1000" cellpadding="0">
+        <tr>
+            <td width = "150" valign= "top">
+                <ul><!-- target 으로 보내줌 여기서는 child(iframe)-->
+                    <li><a  href="https://www.etnews.com" target="child">전자신문</a></li>
+                    <li><a  href="https://www.zdnet.co.kr" target="child">지디넷</a></li>
+                </ul>
+
+            </td>
+            <td>
+                <!-- 공간을 확보-->
+                <iframe name = "child" src="https://www.etnews.com" width = "100%" height = "600" frameborder="0"></a>
+            </td>
+
+        </tr>
+
+    </table>
+</body>
+</html>
