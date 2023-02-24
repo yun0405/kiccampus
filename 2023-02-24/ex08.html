@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+     /* div의 자식 p*/
+     div > p{color : red;}
+      /* div의 자손 p*/
+      div  p{color : blue;}
+       /* div의 아우(맞후임 하나만) p*/
+       div + p{color : green;}
+       /* div의 아우(전체) p*/
+       div ~ p{color : purple;}
+    </style>  
+</head>
+<body >
+    <!-- Dom(document object model) tree-->
+   <p >hello css1</p>
+   <div>
+      <p>hello css2</p>
+      <span>
+        <p >hello css3</p>
+      </span>
+      <p >hello css4</p>
+   </div>
+   <!--근접아우(~ or + 통해 접근)-->
+   <p >hello css5</p>
+   <!--비 근접 아우 (~ 통해서 접근)-->
+   <p >hello css6</p>
+</body>
+</html>

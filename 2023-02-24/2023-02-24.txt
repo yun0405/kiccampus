@@ -1,0 +1,1260 @@
+웹서버 구축
+1.jsp를 사용하기 위한 	
+	-apache-tomcat
+		웹 서버 구동테스트
+		1.cd 파일경로\bin\catalina.bat run 
+		2.작업중지 ctrl + c	
+
+		웹 서버 구동
+		1.cd 파일경로\bin\startup.bat
+		2.작업중지 shutdown.bat / ctrl + c
+
+		웹 접속
+		1.localhost:8080
+		2.(ip):8080
+		
+	-jdk	(환경변수 설정)				
+		1.JAVA_HOME				
+		2.Path
+
+2.cmd 명령어
+	dir - 디렉토리 출력
+	/w -  옵션 출력
+
+	
+3.html
+	1.입력
+		<from>
+			<input> </input>
+		</form>
+ex)
+<form> 
+        <!--한줄 입력-->
+        <input type = "text" /> <br/>
+        <input type = "text" size = "50"/> <br/>
+        <input type = "text" size = "50" maxlength="20"/> <br/>
+        <input type = "text" size = "50" maxlength="20" value = "초기값"/> <br/>
+        <input type = "text" size = "50" maxlength="20" value = "읽기만 가능"  readonly/> <br/>
+        <input type = "text" size = "50" maxlength="20" placeholder="가이드"/> <br/>
+        <!--비밀번호(암호화)-->
+        <input type = "password"/> <br/>
+
+        <!--여러줄 입력-->
+        <textarea rows= "5" cols = "50" ></textarea><br/><br/>
+        <textarea rows= "5" cols = "50" >초기값</textarea><br/><br/>
+        <textarea rows= "5" cols = "50" placeholder="값입력"></textarea><br/><br/>
+
+        
+</form>
+
+4.css
+	1.web desigh
+	2.cascading style sheet
+
+
+5.css 적용
+	1.inline - tag 옆에서 효과를 가진다.
+		<body style="background-color: green;">
+    			hello css!
+		</body>
+
+
+	2.head - 미리 정의한 후 적용
+		<style type="text/css">
+       			 body {background-color: blue;} 
+    		</style>
+
+
+	3.외부파일에 저장
+		<link rel = "stylesheet" type="text/css" href="./default.css"/>
+
+		default.css
+		body {background-color: magenta;} 
+
+6.select
+	태그
+	클래스
+	아이디
+	background-color :	배경색
+	color 		전경색(글자색)
+
+	복합선택자
+		자손 선택자 - 바로밑에 있는 
+		후손 선택자 - 밑에 밑에 있는
+
+7.box model(영역)
+	width/height
+	border
+		width
+		color
+		
+	padding/margin
+
+	블럭 태그(p,div,span)+css	
+
+
+8. inline
+	-width /height /margin / padding <= block
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <form action="https://www.google.com/search" method="get">
+        검색어 <input type="text" name = "q">
+        <input type ="submit" value="구글에서 검색"/>
+        <!--이미지 버튼-->
+        <input type ="image" src="./images/daum.png"/>
+        <!--버튼 생성-->
+        <button>다음에서 검색</button><!--기능 o-->
+        <input type="button" value="구글에서 검색"/><!--기능 x 모양만 만듦-->
+        <!--검색창 초기화-->
+        <input type="reset" value="초기화"/>
+    </form>
+    
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- inline형식-->
+<body style="background-color: green;">
+    hello css!
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--head 방식 (미리 선언하여 사용)-->
+    <!--body selector {color:bule; a:a; b:b; } ;을 이용하여 여러가지 효과를 넣을 수 있다.-->
+    <style type="text/css">
+        body {background-color: blue;} 
+    </style>
+
+</head>
+<body >
+    hello css!
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--외부 파일을 활용하여 선언-->
+    <link rel = "stylesheet" type="text/css" href="./default.css"/>
+   
+</head>
+<body >
+   hello
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--외부 파일을 활용하여 선언-->
+    <link rel = "stylesheet" type="text/css" href="./default.css"/>
+    <!--재선언시 재선언된 blue가 적용된다. 
+        점진적으로 적용되는거라 파랑 아래에 default에서 가져온 에버그린색이 들어가 있다.
+        결과적으로 적용 되는 부분에 가장 가까이에(마지막에) 선언된 스타일이 적용된다.-->
+    <style type="text/css">
+        body {background-color: blue;}
+    </style>  
+</head>
+<body >
+   
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*이부분에서는 주석을 이렇게 사용하고 아래의 코드는 전체 선택자이다. */
+        /* * {color:red;} */     
+        /*태그 선택자*/
+        p{color : red;}
+        div{color : blue; background-color: aqua;}
+        /* 오버라이딩되어 초록색으로 출력된다.*/
+        p{color : green;}
+    </style>  
+</head>
+<body >
+   <p>hello css</p>
+   <div>hello css</div>
+   <p>hello css</p>
+   <div>hello css</div>
+   <p>hello css</p>
+   <div>hello css</div>
+   <p>hello css</p>
+   <div>hello css</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+       /*클래스를 선언할때는 .클래스명으로 사용 */
+       .c1 {color: red;}
+       .c2 {color: blue;}
+       
+        div.c1 {color: green;}
+
+    </style>  
+</head>
+<body >
+    <!--class로 묶어줄 수 있음-->
+   <p class = "c1">hello css</p>
+   <div class = "c1">hello css</div>
+   <p class = "c2">hello css</p>
+   <div class = "c2">hello css</div>
+   <p class = "c3">hello css</p>
+   <div class = "c3">hello css</div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+      #i1 {color : red;}
+      #i2 {color : rgb(45, 29, 192);}
+      #i3 {color : rgb(100, 7, 100);}
+      #i4 {color : rgb(21, 91, 156);}
+      #i5 {color : rgb(199, 153, 180);}
+      #i6 {color : rgb(38, 197, 59);}
+        /*이렇게도 사용가능*/
+      #i1,#i2,#i3{color : rgb(38, 197, 59);}
+    </style>  
+</head>
+<body >
+    <!--class로 묶어줄 수 있음-->
+   <p id = "i1">hello css</p>
+   <div id = "i2">hello css</div>
+   <p id = "i3">hello css</p>
+   <div id = "i4">hello css</div>
+   <p id = "i5">hello css</p>
+   <div id = "i6">hello css</div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+     /* div의 자식 p*/
+     div > p{color : red;}
+      /* div의 자손 p*/
+      div  p{color : blue;}
+       /* div의 아우(맞후임 하나만) p*/
+       div + p{color : green;}
+       /* div의 아우(전체) p*/
+       div ~ p{color : purple;}
+    </style>  
+</head>
+<body >
+    <!-- Dom(document object model) tree-->
+   <p >hello css1</p>
+   <div>
+      <p>hello css2</p>
+      <span>
+        <p >hello css3</p>
+      </span>
+      <p >hello css4</p>
+   </div>
+   <!--근접아우(~ 이거나 + 통해 접근)-->
+   <p >hello css5</p>
+   <!--비 근접 아우 (~ 통해서 접근)-->
+   <p >hello css6</p>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+         /*pseudo class*/
+         /*링크가 걸려있음*/
+         a:link {color :#ff0000;}
+          /*링크에 다녀옴*/
+         a:visited {color :#00ff00;}
+          /*마우스를 대상에 올려놓음*/
+         a:hover {color :#ff00ff;}
+          /*클릭을 했을때*/
+         a:active {color :#0000ff;}
+    </style>  
+</head>
+<body >
+   <a href="https://m.naver.com">모바일 네이버</a><ba/><ba/>
+   <a href="https://m.nate.com">모바일 네이트</a><ba/><ba/>
+   <a href="https://m.daum.net">모바일 다음</a><ba/><ba/>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*지정해줄 수 있음*/
+         /*div:first-child{color:red;}
+         div:last-child{color:green;}
+         div:nth-child(2){color:blue;}*/
+        
+         /*반복적인 선택(2의 배수)*/
+         div:nth-child(2n){color:red;}
+
+         
+    </style>  
+</head>
+<body >
+   <div>hello css</div>
+   <div>hello css</div>
+   <div>hello css</div>
+   <div>hello css</div>
+   <div>hello css</div>
+   <div>hello css</div>
+   <div>hello css</div>
+   <div>hello css</div>
+   <div>hello css</div>
+   <div>hello css</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*pseudo element*/
+        /*첫줄에 글씨를 빨간색으로 바꿔줌*/
+        div::first-line{color:#ff0000;}
+        /*첫글자에 글씨를 빨간색으로 바꿔줌*/
+        div::first-letter{color:#ff6600;font-size: xx-large;}
+         
+    </style>  
+</head>
+<body >
+   <div>아래 텍스트는 실제 방송 내용과 차이가 있을 수 있으니 보다 정확한 내용은 방송으로 확인하시기 바랍니다. 인용 시 [YTN 굿모닝 와이티엔] 명시해주시기 바랍니다.
+
+    ◇앵커> 에너지 공기업들은 지금 적자에 허덕이고 있는데 지난해 실적을 오늘 발표합니다. 그런데 가스공사는 배당금 지급 여부를 결정한다고요?</div>
+   
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /*어떤 속성의 어떤 값*/
+        a[target] {background-color:green;}
+        /*target 으로 _blank를 잡아서 _blank가 들어가있는 하이퍼링크에 배경으로 파란색을 사용했다.*/
+        a[target="_blank"] {background-color:blue;}
+         
+    </style>  
+</head>
+<body >
+   <a href="https://m.naver.com">네이버 모바일</a><br/><br/>
+   <a href="https://m.naver.com" target="_blank">네이버 모바일</a><br/><br/>
+   
+   <a href="https://m.naver.com">네이버 모바일</a><br/><br/>
+   
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            /*배경색상 방법1
+            background-color:#0000ff ;
+            배경색상 방법2
+            background-color:rgb(0,255,0) ;
+            이미지 넣기
+            background-image:url('../images/daum.png') ;
+            반복 방법
+            background-repeat: no-repeat;
+            x축 반복 방법
+            background-repeat: repeat-x;
+            y축 반복 방법
+            background-repeat: repeat-y;
+            오른쪽 상단에 넣어주기
+            background-position: right top;
+            오른쪽 상단에 고정하여 넣어주기
+            background-attachment: fixed;
+            /*색 , 이미지, 반복, 스크롤 ,위치(이순서는 지켜져야만 한다. 생략은 가능)*/
+            background: #0000ff url('../images/daum.png')no-repeat fixed right top;
+        }
+    </style>  
+</head>
+<body >
+   
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+   hello css<br/><br/>
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        
+        div,td{
+        
+     
+           /*색 , 이미지, 반복, 스크롤 ,위치(이순서는 지켜져야만 한다. 생략은 가능)*/
+           
+            background:url('../images/img_flwr.gif') repeat fixed right top,url(../images/paper.gif) repeat; 
+           
+           
+           
+        }
+    </style>  
+</head>
+<body >
+   
+   <table border="1" width="600"height="200">
+        <tr>
+            <td>1열</td>
+            <td>1열</td>
+        </tr>
+   </table>
+   <br/><br/>
+<div>
+    hello css<br/>
+    hello css<br/>
+    hello css<br/>
+    hello css<br/>
+    hello css<br/>
+    hello css<br/>
+    hello css<br/>
+
+
+
+</div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        
+        div,td{
+        
+     
+           /*색 , 이미지, 반복, 스크롤 ,위치(이순서는 지켜져야만 한다. 생략은 가능)*/
+           
+            background:url('../images/img_flwr.gif') repeat fixed right top,url(../images/paper.gif) repeat; 
+           
+           
+           
+        }
+    </style>  
+</head>
+<body >
+   
+   <table border="1" width="600"height="200">
+        <tr>
+            <td>1열</td>
+            <td>1열</td>
+        </tr>
+   </table>
+   <br/><br/>
+<div>
+    
+    hello css<br/>
+    hello css<br/>
+    hello css<br/>
+    hello css<br/>
+    hello css<br/>
+    hello css<br/>
+    hello css<br/>
+    hello css<br/>
+    hello css<br/>
+    hello css<br/>
+
+
+
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #i1 { 
+            /*폰트 지정*/
+            font-family: "궁서체";
+            /*기본 사이즈는 16px이다.*/
+            font-size: 40px;
+            /*기울이기*/
+            font-style: italic;
+            /*굵기*/
+            font-weight: bold;
+            }
+
+        #i2 { 
+            font-family: "굴림체";           
+            font-size: 20px;
+            }
+
+        #i3 {
+            font-family: "궁서체";
+            /*폰트는 배율설정이 가능하다 2em = 2배율 
+            font-size: 2em;*/
+             /*폰트는 배율설정이 가능하다 200% = 2배율 */
+            font-size: 200%;
+            }
+        #i4 {
+                font: bold 20px "궁서체"
+            }
+        
+       
+       
+    </style>  
+</head>
+<body >
+ <div id="i1">hello font 한글내용</div>
+ <div id="i2">hello font 한글내용</div>
+ <div id="i3">hello font 한글내용</div>
+ <div id="i4">hello font 한글내용</div>
+
+    
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum Pen Script"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jua"/>
+    <
+    <style type="text/css">
+        
+       #i1 {
+            font-family: "Nanum Pen Script","굴림체";
+            font-size: 100px;
+            }
+       
+       #i2 {
+            font-family: "Jua","굴림체";
+            font-size: 100px;
+            }
+       
+       
+    </style>  
+</head>
+<body >
+ <div id="i1">hello font 한글내용</div>
+ <div id="i2">hello font 한글내용</div>
+ 
+   
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--구글의 폰트를 받아오기-->
+    
+    
+    
+    <style type="text/css">
+        /*폰트*/
+
+        @font-face{
+          font-family: myFont1;
+          src: url("../fonts/sansation_light.woff");
+
+        }
+        @font-face{
+          font-family: myFont2;
+          src: url("../fonts/gabia_bombaram.ttf");
+
+        }
+       #i1 {
+            font-family: myFont1;
+            font-size: 100px;
+            }
+       
+       #i2 {
+            font-family: myFont2 ;
+            font-size: 100px;
+            }
+       
+       
+    </style>  
+</head>
+<body >
+ <div id="i1">hello font 한글내용</div>
+ <div id="i2">hello font 한글내용</div>
+ 
+   
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <i class="fas fa-cloud"></i>
+  <i class="fas fa-heart"></i>
+  <i class="fas fa-car"></i>
+  <i class="fas fa-file"></i>
+  <i class="fas fa-bars"></i>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+ 
+<i class="glyphicon glyphicon-cloud"></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #i1 {cursor:default;}
+        #i2 {cursor:auto;}
+        #i3 {cursor:help;}
+    </style>
+</head>
+<body>
+    
+    <div id = "i1">default</div>
+    <div id = "i2">auto</div>
+    <div id = "i3">crosshair</div>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        ul.a{list-style-type:square;}
+        ol.a{list-style-type:upper-alpha;}
+        ol.b{list-style-image:url("../images/purple.gif");}
+       /* dl.c{ }*/
+    </style>
+    
+</head>
+<body>
+    
+    <ul class="a">
+        <li>참외</li>
+        <li>수박</li>
+        <li>딸기</li>
+        <li>키위</li>
+    </ul>
+    <ol class="a">
+        <li>참외</li>
+        <li>수박</li>
+        <li>딸기</li>
+        <li>키위</li>
+    </ol>
+    <ol class="b">
+        <li>참외</li>
+        <li>수박</li>
+        <li>딸기</li>
+        <li>키위</li>
+    </ol>
+    <dl class="c">
+        <dt>
+            참외
+        </dt>
+        <dd>참외는 오늘도 참외롭다.</dd>
+    </dl>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+       #i1 { 
+            border-width: 1px;
+            border-color: red;
+            border-style: solid;
+            }
+
+       #i2 { 
+            border-width: 2px;
+            border-color: blue;
+            border-style: dotted;
+            }
+
+       #i3 {
+            /*한줄로 사용가능*/
+            /*border: 2px dotted blue; */
+
+            /*밑줄로 사용*/
+            /*
+            border-bottom-width: 2px;
+            border-bottom-color: green;
+            border-bottom-style: solid;
+            */
+
+            /*위에도 한줄로 표현가능*/
+            border-bottom: 2px solid green;
+            /*밑줄 말고 윗줄로도 가능*/
+            border-top:2px solid blue;
+            }
+    </style>
+    
+</head>
+<body>
+    
+  <div id="i1">영역1</div>
+  <div id="i2">영역2</div>
+  <div id="i3">영역3</div>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+          span{ /*width, height가 적용되지 않음*/
+               border : 2px dotted blue;
+               width: 100px;
+               height: 100px;
+          }
+       
+          
+
+    </style>
+    
+</head>
+<body>
+    
+  <div id="i1">영역1</div>
+  <div id="i2">영역2</div>
+
+
+  <span>영역1</span>
+  <span>영역2</span>
+  
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+          div{ /*width, height가 적용되지 않음*/
+               border : 2px dotted blue;
+              /* padding: 20px;
+              padding-left: 20px;
+              padding-top: 20px;*/
+              /*상우하좌(시계방향)*/
+              padding:50px 50px 50px 50px;
+              /*margin: 50px 50px 50px 50px;*/
+              
+              }
+       
+          #i1{
+            margin-bottom: 100;
+          }
+          #i2{
+            margin-top: 100;
+          }
+
+    </style>
+    
+</head>
+<body>
+    
+  <div id="i1">영역1</div>
+  <div id="i2">영역2</div>
+
+
+  <span>영역1</span>
+  <span>영역2</span>
+  
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+         span{
+          background-color: lightgray;
+          width: 200px;
+          height: 200px;
+          border: 1px solid red;
+          padding:  10px;
+         }
+    </style>
+    
+</head>
+<body>
+
+  <span>hello box model</span>
+  <span>hello box model</span>
+  <span>hello box model</span>
+  <span>hello box model</span>
+  <span>hello box model</span>
+  <br/>
+  <br/>
+  <span>hello box model</span>
+  <span>hello box model</span>
+  <span>hello box model</span>
+  <span>hello box model</span>
+  <span>hello box model</span>
+  
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+         span{
+          background-color: lightgray;
+          width: 200px;
+          height: 200px;
+          border: 1px solid red;
+          border-radius: 10px;/*모서리 곡률*/
+          padding:  10px;
+         
+         }
+    </style>
+    
+</head>
+<body>
+
+  <span>hello box model</span>
+  <span>hello box model</span>
+  <span>hello box model</span>
+  <span>hello box model</span>
+  <span>hello box model</span>
+  <span>hello box model</span>
+  <br/>
+  <br/>
+  <span>hello box model</span>
+  <span>hello box model</span>
+  <span>hello box model</span>
+  <span>hello box model</span>
+  <span>hello box model</span>
+  
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        div{
+          width: 200px;
+          height: 50px;
+          border: 1px solid red;
+
+        }
+        #i1{/*숨기기*/
+          display: none;
+        }
+        #i2{/*영역은 남기고 숨기기*/
+         visibility: hidden;
+        }
+        
+        
+        
+        
+        
+        
+    </style>
+    
+</head>
+<body>
+<div id="i1">hello visible1</div>
+<div id="i2">hello visible2</div>
+<div id="i3">hello visible3</div>
+<div id="i4">hello visible4</div>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+       
+        
+        div, span{ border: 1px solid red;}
+        div{display: inline;} /*블록 태그 -> 인라인 태그*/
+        span{display: block;} /*블록 태그 <- 인라인 태그*/
+        
+        
+        
+    </style>
+    
+</head>
+<body>
+  <!--블록 태그(block tag)-->
+<div id="i1">hello visible1</div>
+<div id="i2">hello visible2</div>
+<br/>
+<br/>
+<!--인라인 태그(inline tag)-->
+<span>hello visible3</span>
+<span>hello visible3</span>
+
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        span.a{
+
+          display: inline;
+          width: 100px;
+          height: 100px;
+          padding: 5px;
+          border: 1px solid blue;
+          background-color: yellow ;
+        }
+       
+        span.b{
+
+          display:  inline-block;
+          width: 100px;
+          height: 100px;
+          padding: 5px;
+          border: 1px solid red;
+          background-color: yellow ;
+        }
+
+        span.c{
+
+          display: block;
+          width: 100px;
+          height: 100px;
+          padding: 5px;
+          border: 1px solid red;
+          background-color: yellow ;
+        }
+       
+    </style>
+    
+</head>
+<body>
+  <span class = "a">inline</span>
+  <span class = "a">inline</span>
+  
+  <br/> <br/> 
+  <span class = "b">inline</span>
+  <span class = "b">inline</span>
+  <br/> <br/> 
+  <span class = "c">inline</span>
+  <span class = "c">inline</span>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.hi {
+  background-color: yellow; 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.hi li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h>안녕하세요</h>
+<p>안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요</p>
+<p>안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요안녕하세요</p>
+<ul class="hi">
+  <li><a href="../images/tomcat.png">고양이</a></li>
+  <li><a href="../images/paper.gif">종이</a></li>
+  <li><a href="../images/img_flwr.gif">꽃</a></li>  
+  <li><a href="../images/daum.png">다음</a></li>
+</ul>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css"> 
+img {
+  width:170px;
+  height: 170px;
+  margin-left: 15px;
+  float: right;
+  
+
+}
+</style>
+</head>
+<body>
+  <h2>Float None</h2>
+
+  <p>In this example, the image will be displayed just where it occurs in the text (float: none;).</p>
+  
+ 
+  
+<p><img src="../images/pineapple.jpg" >
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css"> 
+img {
+  width:170px;
+  height: 170px;
+  margin-left: 15px;
+  margin-top:15px;
+  float: right;
+}
+
+</style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td class="t1">
+        <h2>Float None</h2>
+
+        <p>In this example, the image will be displayed just where it occurs in the text (float: none;).</p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+      </td>
+      <td><p><img src="../images/pineapple.jpg" ></td>
+    </tr>
+  </table>
+ 
+  
+ 
+  
+
+  
+</body>
+</html>
+
+
