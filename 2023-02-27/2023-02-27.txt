@@ -1,0 +1,2391 @@
+1. 버튼 레퍼런스
+https://www.bestcssbuttongenerator.com/
+
+<img> 는 src
+<link> 는 herf
+<backgruond> 는 url 로 불러올수있다.
+
+
+2.프로그래밍 언어
+	
+	1.컴파일 언어
+		소스 ->(컴파일)->실행 코드->(실행)
+		*속도
+	2.스크립트 언어
+		소스 ->(실행)
+		*편리
+3.Java Script
+	변수 : 변경이 가능하다
+		let a = "1" 
+		console.log(변수명):변수의 내용값이 출력됨
+		값에 따라서 변수의 자료형태는 자동 결정
+
+	상수 : 변경이 불가능하다
+	 	const b = "2"
+		
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css"> 
+
+
+
+.myButton {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+  /**/
+  display: inline-block;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+</style>
+
+        
+</head>
+<body>
+
+  
+  <a href="#" class="myButton">해위</a><br/>
+  <br/>
+  <div class ="myButton">초록색 버튼</div><br/><br/>
+  <button class = "myButton" value ="해위해위"></button>
+
+  
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css"> 
+
+
+	#i1 {text-align: center;}
+	#i2 {text-align: right;}
+	#i3 {text-align: left;}
+
+
+</style>
+
+        
+</head>
+<body>
+
+  
+ 	<div id ="i1">Heading</div>
+ 	<div id ="i2">Heading</div>
+ 	<div id ="i3">Heading</div>
+
+  
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css"> 
+p.a {
+  text-align-last: right;
+}
+
+p.b {
+  text-align-last: center;
+}
+
+p.c {
+  text-align-last: justify;
+}
+</style>
+
+        
+</head>
+<body>
+
+  
+<h1>머릿말</h1>
+
+<h2>text-align-last: right:</h2>
+<p class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+
+<h2>text-align-last: center:</h2>
+<p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+
+<h2>text-align-last: justify:</h2>
+<p class="c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+
+  
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css"> 
+ #i1{ vertical-align:  baseline;}
+ #i2{ vertical-align:  text-top;}
+ #i3{ vertical-align:  text-bottom;}
+
+</style>
+       
+</head>
+<body>
+<p> hello <img id="i1" src="../apache-tomcat-9.0.71/webapps/ROOT/images/purple.gif"width="9"height="9"> Text Alingment</p>
+<p> hello <img id="i2" src="../apache-tomcat-9.0.71/webapps/ROOT/images/purple.gif"width="9"height="9"> Text Alingment</p>
+<p> hello <img id="i3" src="../apache-tomcat-9.0.71/webapps/ROOT/images/purple.gif"width="9"height="9"> Text Alingment</p>
+  
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css"> 
+  #i1{
+    text-decoration: overline;
+  }
+  #i2{
+    text-decoration: underline;
+  }
+  #i3{
+    text-decoration-line:line-through ;
+    text-decoration-color:red ;
+    text-decoration-style:dotted ;
+    color: red;
+  }
+  /*링크 언더라인없애기*/
+  a:link{text-decoration-line:none ;}
+  /*마우스를 올렸을때만 언더라인*/
+  a:hover{text-decoration-line:underline ;}
+</style>
+       
+</head>
+<body>
+    <a href="https://www.nate.com">네이트 바로가기</a>
+    <br/>
+    <br/>
+    <div id="i1">hello decoation</div>
+    <div id="i2">hello decoation</div>
+    <div id="i3">hello decoation</div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css"> 
+    #i1{ text-transform: uppercase;}
+    #i2{ text-transform: lowercase;}
+    #i3{ text-transform: capitalize;}
+    
+</style>
+       
+</head>
+<body>
+    
+    <div id="i1">this is some text</div><!--대문자-->
+    <div id="i2">this is some text</div><!--소문자-->
+    <div id="i3">this is some text</div><!--첫글자만 대문자-->
+    
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css"> 
+    #i1{ text-indent: 50px;}/*들여쓰기*/
+    /*#i2{ letter-spacing: 3px;}/*글자폭
+    #i3{ letter-spacing: -3px;}*/
+    /*#i2{ word-spacing: 10px;}/*글자크기만
+    #i3{ word-spacing: -5px;}*/
+    #i2{ line-height: 0.8;}/*간격이 바뀐다*/
+    #i3{  line-height:9.8;}
+    
+</style>
+       
+</head>
+<body>
+    
+    <div id="i1">this is some text</div><!--대문자-->
+    <div id="i2">this is some text</div><!--소문자-->
+    <div id="i3">this is some text</div><!--첫글자만 대문자-->
+    
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css"> 
+    h1{ text-shadow: 2px 2px 5px red;}/*x값 y값 블러 색깔*/
+</style>
+       
+</head>
+<body>
+    <h1>this is some text.</h1>
+    
+    
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+div {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: coral;
+  box-shadow: 10px 10px 5px lightblue;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow effect!</h1>
+<div>A div element with a 5px blurred, lightblue box-shadow.</div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.polaroid {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.container {
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+  <h1>Create Polaroid Images</h1>
+
+  <p>The box-shadow property can be used to create polaroid images:</p>
+  
+  <div class="polaroid">
+    <img src="../apache-tomcat-9.0.71/webapps/ROOT/images/river.jpg" alt="Norway" style="width:100%">
+    <div class="container">
+      <p>Hardanger, Norway</p>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+  <h1>Create Cards</h1>
+
+<p>The box-shadow property can be used to create paper-like cards:</p>
+
+  <div class="card">
+    <div class="header">
+      <h1>1</h1>
+    </div>
+
+    <div class="container">
+      <p>January 1, 2021</p>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  div{
+    background-color: green;
+    width: 200px;
+    height: 65px;
+    border: 1px solid black;
+    /*지정한 영역이외의 구역의 내용을 지운다.*/
+    /*overflow: hidden;*/
+    /*데이터의 양과는 상관없이 무조건 스크롤을 생성*/
+    /*overflow: scroll;*/
+    /*데이터의 양이 많을때만 스크롤을 생성*/
+    overflow: auto;
+
+
+  }
+
+  </style>
+</head>
+
+<body>
+  <div>
+      1. 동해물과 백두산이 마르고 닳도록
+    하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    2. 남산 위에 저 소나무 철갑을 두른 듯
+    바람 서리 불변함은 우리 기상일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    3. 가을 하늘 공활한데 높고 구름 없이
+    밝은 달은 우리 가슴 일편단심일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    4. 이 기상과 이 맘으로 충성을 다하여
+    괴로우나 즐거우나 나라 사랑하세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+  </div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+p{font-size: 100px;} 
+  </style>
+</head>
+
+<body>
+
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  
+<p id="home">1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세</p>
+  <p id="news">2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세</p>
+<p id="contact">3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세</p>
+<p id="about">  4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세</p>
+  <div>
+      
+
+
+
+    
+
+   
+  </div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+      table{
+        width: 600px;
+        /*border: 1px solid black;*/
+        border-collapse: collapse;/*겹치는 외곽선 없애줌*/
+      }
+
+      th, td{
+        /*border: 1px solid black;*/
+
+      }
+      th{
+        height: 50px;
+        text-align: center;
+        background-color: red;
+        color: white;
+      }
+      td{
+        padding: 20px;
+        border-bottom: 1px solid black;
+      }
+      tr:nth-child(2n){
+          background-color: #acabab;
+      }
+  </style>
+</head>
+
+<body>
+
+  <table>
+      <tr>
+        <th>option 1</th>
+        <th>option 2</th>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      
+  </table>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+     div{
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+
+     }
+     #i1 {
+      /*절대좌표계1 (absolute)*/
+      position: absolute;
+      top:0px;
+      left:0px;
+      background-color: red;
+      /*xyz값의 z 높이를 나타낸다. 크기가 클수록 높히있다. */
+      z-index: 3;
+     }
+     #i2 {
+      /*절대좌표계2*/
+      position: absolute;
+      top:50px;
+      left:50px;
+      background-color: green;
+      z-index: 1;
+     }
+     #i3 {
+      /*절대좌표계3*/
+      position: absolute;
+      top:100px;
+      left:100px;
+      background-color: blue;
+      z-index: 2;
+
+    
+     }
+     
+  </style>
+</head>
+
+<body>
+
+  <div id = "i1">layer1</div>
+  <div id = "i2">layer2</div>
+  <div id = "i3">layer3</div>
+
+  
+ 
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+     div{
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+
+     }
+     #i1 {
+      /*상대좌표계1(relative)
+        0좌표를 기준으로 잡는게 아닌 이전의 좌표를 기준으로 잡음.*/
+      position: relative;
+      top:0px;
+      left:0px;
+      background-color: red;
+      
+     }
+     #i2 {
+      /*상대좌표계2*/
+      position: relative;
+      top:50px;
+      left:50px;
+      background-color: green;
+      
+     }
+     #i3 {
+      /*상대좌표계3*/
+      position: relative;
+      top:100px;
+      left:100px;
+      background-color: blue;
+      
+
+    
+     }
+     
+  </style>
+</head>
+
+<body>
+
+  <div id = "i1">layer1</div>
+  <div id = "i2">layer2</div>
+  <div id = "i3">layer3</div>
+
+  
+ 
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    
+     #i1 {
+      position: fixed;
+      bottom: 0px;
+      right: 0px;
+      width: 300px;
+      border:  1px solid black;
+      background-color: red;
+     }
+     
+  </style>
+</head>
+
+<body>
+
+  <div id = "i1">layer1</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    #i2{
+        padding-bottom: 2000px;
+        
+    }
+    #i1{
+        /*상단에 붙힘*/
+        position: sticky;
+        top:5px;
+        padding: 5px;
+        background-color: #cae8ca;
+    }
+     
+      
+     
+  </style>
+</head>
+
+<body>
+  <div id="i1">Sticky layer</div>
+  <div id="i2">
+  <p>
+      1. 동해물과 백두산이 마르고 닳도록
+    하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    2. 남산 위에 저 소나무 철갑을 두른 듯
+    바람 서리 불변함은 우리 기상일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    3. 가을 하늘 공활한데 높고 구름 없이
+    밝은 달은 우리 가슴 일편단심일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    4. 이 기상과 이 맘으로 충성을 다하여
+    괴로우나 즐거우나 나라 사랑하세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+  </p>
+  
+  <p>
+      1. 동해물과 백두산이 마르고 닳도록
+    하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    2. 남산 위에 저 소나무 철갑을 두른 듯
+    바람 서리 불변함은 우리 기상일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    3. 가을 하늘 공활한데 높고 구름 없이
+    밝은 달은 우리 가슴 일편단심일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    4. 이 기상과 이 맘으로 충성을 다하여
+    괴로우나 즐거우나 나라 사랑하세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+  </p>
+  <p>
+      1. 동해물과 백두산이 마르고 닳도록
+    하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    2. 남산 위에 저 소나무 철갑을 두른 듯
+    바람 서리 불변함은 우리 기상일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    3. 가을 하늘 공활한데 높고 구름 없이
+    밝은 달은 우리 가슴 일편단심일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    4. 이 기상과 이 맘으로 충성을 다하여
+    괴로우나 즐거우나 나라 사랑하세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+  </p>
+  <p>
+      1. 동해물과 백두산이 마르고 닳도록
+    하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    2. 남산 위에 저 소나무 철갑을 두른 듯
+    바람 서리 불변함은 우리 기상일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    3. 가을 하늘 공활한데 높고 구름 없이
+    밝은 달은 우리 가슴 일편단심일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    4. 이 기상과 이 맘으로 충성을 다하여
+    괴로우나 즐거우나 나라 사랑하세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+  </p>
+  <p>
+      1. 동해물과 백두산이 마르고 닳도록
+    하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    2. 남산 위에 저 소나무 철갑을 두른 듯
+    바람 서리 불변함은 우리 기상일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    3. 가을 하늘 공활한데 높고 구름 없이
+    밝은 달은 우리 가슴 일편단심일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    4. 이 기상과 이 맘으로 충성을 다하여
+    괴로우나 즐거우나 나라 사랑하세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+  </p>
+  <p>
+      1. 동해물과 백두산이 마르고 닳도록
+    하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    2. 남산 위에 저 소나무 철갑을 두른 듯
+    바람 서리 불변함은 우리 기상일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    3. 가을 하늘 공활한데 높고 구름 없이
+    밝은 달은 우리 가슴 일편단심일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    4. 이 기상과 이 맘으로 충성을 다하여
+    괴로우나 즐거우나 나라 사랑하세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+  </p>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+p{font-size: 100px;} 
+  </style>
+</head>
+
+<body>
+
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  
+<p id="home">1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세1. 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라 만세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세</p>
+  <p id="news">2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세2. 남산 위에 저 소나무 철갑을 두른 듯
+  바람 서리 불변함은 우리 기상일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세</p>
+<p id="contact">3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세3. 가을 하늘 공활한데 높고 구름 없이
+  밝은 달은 우리 가슴 일편단심일세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세</p>
+<p id="about">  4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세4. 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라 사랑하세
+  무궁화 삼천리 화려 강산
+  대한 사람 대한으로 길이 보전하세</p>
+  <div>
+      
+
+
+
+    
+
+   
+  </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+      table{
+        width: 600px;
+        /*border: 1px solid black;*/
+        border-collapse: collapse;/*겹치는 외곽선 없애줌*/
+      }
+
+      th, td{
+        /*border: 1px solid black;*/
+
+      }
+      th{
+        height: 50px;
+        text-align: center;
+        background-color: red;
+        color: white;
+      }
+      td{
+        padding: 20px;
+        border-bottom: 1px solid black;
+      }
+      tr:nth-child(2n){
+          background-color: #acabab;
+      }
+  </style>
+</head>
+
+<body>
+
+  <table>
+      <tr>
+        <th>option 1</th>
+        <th>option 2</th>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      
+  </table>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+     div{
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+
+     }
+     #i1 {
+      /*절대좌표계1 (absolute)*/
+      position: absolute;
+      top:0px;
+      left:0px;
+      background-color: red;
+      /*xyz값의 z 높이를 나타낸다. 크기가 클수록 높히있다. */
+      z-index: 3;
+     }
+     #i2 {
+      /*절대좌표계2*/
+      position: absolute;
+      top:50px;
+      left:50px;
+      background-color: green;
+      z-index: 1;
+     }
+     #i3 {
+      /*절대좌표계3*/
+      position: absolute;
+      top:100px;
+      left:100px;
+      background-color: blue;
+      z-index: 2;
+
+    
+     }
+     
+  </style>
+</head>
+
+<body>
+
+  <div id = "i1">layer1</div>
+  <div id = "i2">layer2</div>
+  <div id = "i3">layer3</div>
+
+  
+ 
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+     div{
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+
+     }
+     #i1 {
+      /*상대좌표계1(relative)
+        0좌표를 기준으로 잡는게 아닌 이전의 좌표를 기준으로 잡음.*/
+      position: relative;
+      top:0px;
+      left:0px;
+      background-color: red;
+      
+     }
+     #i2 {
+      /*상대좌표계2*/
+      position: relative;
+      top:50px;
+      left:50px;
+      background-color: green;
+      
+     }
+     #i3 {
+      /*상대좌표계3*/
+      position: relative;
+      top:100px;
+      left:100px;
+      background-color: blue;
+      
+
+    
+     }
+     
+  </style>
+</head>
+
+<body>
+
+  <div id = "i1">layer1</div>
+  <div id = "i2">layer2</div>
+  <div id = "i3">layer3</div>
+
+  
+ 
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    
+     #i1 {
+      position: fixed;
+      bottom: 0px;
+      right: 0px;
+      width: 300px;
+      border:  1px solid black;
+      background-color: red;
+     }
+     
+  </style>
+</head>
+
+<body>
+
+  <div id = "i1">layer1</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    #i2{
+        padding-bottom: 2000px;
+        
+    }
+    #i1{
+        /*상단에 붙힘*/
+        position: sticky;
+        top:5px;
+        padding: 5px;
+        background-color: #cae8ca;
+    }
+     
+      
+     
+  </style>
+</head>
+
+<body>
+  <div id="i1">Sticky layer</div>
+  <div id="i2">
+  <p>
+      1. 동해물과 백두산이 마르고 닳도록
+    하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    2. 남산 위에 저 소나무 철갑을 두른 듯
+    바람 서리 불변함은 우리 기상일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    3. 가을 하늘 공활한데 높고 구름 없이
+    밝은 달은 우리 가슴 일편단심일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    4. 이 기상과 이 맘으로 충성을 다하여
+    괴로우나 즐거우나 나라 사랑하세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+  </p>
+  
+  <p>
+      1. 동해물과 백두산이 마르고 닳도록
+    하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    2. 남산 위에 저 소나무 철갑을 두른 듯
+    바람 서리 불변함은 우리 기상일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    3. 가을 하늘 공활한데 높고 구름 없이
+    밝은 달은 우리 가슴 일편단심일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    4. 이 기상과 이 맘으로 충성을 다하여
+    괴로우나 즐거우나 나라 사랑하세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+  </p>
+  <p>
+      1. 동해물과 백두산이 마르고 닳도록
+    하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    2. 남산 위에 저 소나무 철갑을 두른 듯
+    바람 서리 불변함은 우리 기상일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    3. 가을 하늘 공활한데 높고 구름 없이
+    밝은 달은 우리 가슴 일편단심일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    4. 이 기상과 이 맘으로 충성을 다하여
+    괴로우나 즐거우나 나라 사랑하세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+  </p>
+  <p>
+      1. 동해물과 백두산이 마르고 닳도록
+    하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    2. 남산 위에 저 소나무 철갑을 두른 듯
+    바람 서리 불변함은 우리 기상일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    3. 가을 하늘 공활한데 높고 구름 없이
+    밝은 달은 우리 가슴 일편단심일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    4. 이 기상과 이 맘으로 충성을 다하여
+    괴로우나 즐거우나 나라 사랑하세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+  </p>
+  <p>
+      1. 동해물과 백두산이 마르고 닳도록
+    하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    2. 남산 위에 저 소나무 철갑을 두른 듯
+    바람 서리 불변함은 우리 기상일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    3. 가을 하늘 공활한데 높고 구름 없이
+    밝은 달은 우리 가슴 일편단심일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    4. 이 기상과 이 맘으로 충성을 다하여
+    괴로우나 즐거우나 나라 사랑하세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+  </p>
+  <p>
+      1. 동해물과 백두산이 마르고 닳도록
+    하느님이 보우하사 우리나라 만세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    2. 남산 위에 저 소나무 철갑을 두른 듯
+    바람 서리 불변함은 우리 기상일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    3. 가을 하늘 공활한데 높고 구름 없이
+    밝은 달은 우리 가슴 일편단심일세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+
+    4. 이 기상과 이 맘으로 충성을 다하여
+    괴로우나 즐거우나 나라 사랑하세
+    무궁화 삼천리 화려 강산
+    대한 사람 대한으로 길이 보전하세
+  </p>
+  </div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        //한줄 주석
+        /*
+            여러줄 주석
+        */
+       
+      
+        //alert('hello JavaScript');
+        //디버깅(에러 수정)을 위한 출력
+        //대소문자 구분 
+        console.log("hello javascript");
+        //html출력
+        document.write('hello javascript');
+    </script>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        document.write('<table border ="1">');
+        document.write('<tr>');
+        document.write('<td>1열</td>');
+        document.write('<td>2열</td>');
+        document.write('<td>3열</td>');
+        document.write('<tr>');
+        document.write('<tr>');
+        document.write('<td>1열</td>');
+        document.write('<td>2열</td>');
+        document.write('<td>3열</td>');
+        document.write('<tr>');
+        document.write('<tr>');
+        document.write('<td>1열</td>');
+        document.write('<td>2열</td>');
+        document.write('<td>3열</td>');
+        document.write('<tr>');
+        document.write('</table>');
+        
+    </script>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        //선언적인 내용이 주로 사용됨
+    </script>
+
+</head>
+<body>
+
+    <script type="text/javascript">
+        //출력할 내용이 주로 사용됨
+        
+    </script>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        //선언적인 내용이 주로 사용됨
+    </script>
+
+</head>
+<body>
+        <!--외부 파일을 불러오는법-->
+    <script type="text/javascript" src="./default.js">
+        //출력할 내용이 주로 사용됨
+        
+    </script>
+
+
+</body>
+</html>
+
+
+default.js
+
+console.log("hello");
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        div{
+            width:300px;
+            height: 100px;
+            border:  1px solid black;
+
+        }
+        #i2{
+           /* 
+            transform:  translate(-50px,100px);/*순간이동
+            transform: rotate(90deg);90도 회전*/
+        }
+    </style>
+</head>
+<body>
+    <div id="i1">Translate 1</div>
+    <div id="i2">Translate 2
+            <img src="../images/pineapple.jpg"/>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        div{
+            width:100px;
+            height: 100px;
+            border:  1px solid black;
+            transition: width 2s, height 2s;
+            transition: transform 2s;
+
+        }
+        #i2:hover{
+             width: 300px;  
+             height: 300px;
+             transform: rotate(180deg);
+             
+        }
+    </style>
+</head>
+<body>
+    <div id="i2">Translate 1</div>
+   
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+       @keyframes anima{
+        /*
+            from{ background-color: red;}/*처음
+            to  {background-color: blue;}/*끝*/
+
+            0%  {background-color: red; left:0px;top:0px;}
+            25% {background-color: yellow;left:200px;top:0px;}
+            50% {background-color: blue;left:200px;top:200px;}
+            75% {background-color: green;left:200px;top:0px;}
+            100% {background-color: red;left:0px;top:0px;}
+       }
+
+       #i1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: anima;
+            animation-duration: 5s;
+
+
+       }
+     
+    </style>
+</head>
+<body>
+    <div id="i1">anlmation</div>
+   
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+
+  
+            
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+ 
+    transform: rotate(7200deg);
+    transition: transform 2s;
+}
+</style>
+<body style="text-align:center;">
+
+<h2>Basic Tooltip</h2>
+
+<p>빙글빙글</p>
+
+<div class="tooltip">툴팁 확인
+  <span class="tooltiptext">
+    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20230201_109%2F1675243148743WNgoA_JPEG%2F76379044468899359_500564286.jpg&type=a340"/></span>
+</div>
+
+<p>빙글빙글 돌아가는 짱구의 하루~</p>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        //한줄 주석
+        /*
+            여러줄 주석
+        */
+       
+      
+        //alert('hello JavaScript');
+        //디버깅(에러 수정)을 위한 출력
+        //대소문자 구분 
+        console.log("hello javascript");
+        //html출력
+        document.write('hello javascript');
+    </script>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        document.write('<table border ="1">');
+        document.write('<tr>');
+        document.write('<td>1열</td>');
+        document.write('<td>2열</td>');
+        document.write('<td>3열</td>');
+        document.write('<tr>');
+        document.write('<tr>');
+        document.write('<td>1열</td>');
+        document.write('<td>2열</td>');
+        document.write('<td>3열</td>');
+        document.write('<tr>');
+        document.write('<tr>');
+        document.write('<td>1열</td>');
+        document.write('<td>2열</td>');
+        document.write('<td>3열</td>');
+        document.write('<tr>');
+        document.write('</table>');
+        
+    </script>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        //선언적인 내용이 주로 사용됨
+    </script>
+
+</head>
+<body>
+
+    <script type="text/javascript">
+        //출력할 내용이 주로 사용됨
+        
+    </script>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        //선언적인 내용이 주로 사용됨
+    </script>
+
+</head>
+<body>
+        <!--외부 파일을 불러오는법-->
+    <script type="text/javascript" src="./default.js">
+        //출력할 내용이 주로 사용됨
+        
+    </script>
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        //선언적인 내용이 주로 사용됨
+    </script>
+
+</head>
+<body>
+        <!--외부 파일을 불러오는법-->
+    <script type="text/javascript">
+        let b = prompt("이름을 입력하세요")
+        let a = prompt("나이를 입력하세요");
+        let c = prompt("사용하는 언어를 써주세요");
+        let str = `저는 ${b}이고 ${a}살이며, ${c}를 사용합니다.`;
+        console.log(str);   //저는 28살이고 자바스크립트를 좋아합니다.
+        
+    </script>
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        //선언적인 내용이 주로 사용됨
+    </script>
+
+</head>
+<body>
+        <!--외부 파일을 불러오는법-->
+    <script type="text/javascript">
+        let data1=1,data2 =2,three;
+        three=3;
+
+
+    
+
+    
+        console.log(data1);
+        console.log(data2);
+        console.log(three);
+
+
+  
+    </script>
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        //선언적인 내용이 주로 사용됨
+    </script>
+
+</head>
+<body>
+        <!--외부 파일을 불러오는법-->
+    <script type="text/javascript">
+        //반드시 선언하면서 값을 가져야함
+        const DATA1=1;
+       
+        console.log(DATA1);
+       
+        let data2 = 20;
+        console.log(data2);
+  
+    </script>
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        
+    </script>
+
+</head>
+<body>
+        
+    <script type="text/javascript">
+        
+        'use strict'//문법을 딱딱하게 검사하겠다. 라는 뜻이다.
+        //예전 문법
+        data1 =10;
+        console.log(data1);
+
+
+        var data2 = 20;
+        console.log(data2);
+
+  
+    </script>
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        
+    </script>
+
+</head>
+
+<body>
+        
+    <script type="text/javascript">
+        
+        
+        let bool1 = true;
+        let bool2 = false;
+
+        console.log(bool1);
+        console.log(typeof(bool1));//자료형을 알아보는 명령어 typeof();
+
+        //let bool3 = True; 대문자로 사용하게 되면 오류가 발생한다.
+        //consloe.log(bool3);
+        
+
+        
+
+  
+    </script>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        
+    </script>
+
+</head>
+
+<body>
+        
+    <script type="text/javascript">
+        
+        //number
+        //integer,double
+      let num1 =10;
+      let num2 =3.14;
+      let num3 =3.14e3;//3.14x10^3
+
+
+      console.log(num1);
+      console.log(num2);
+      console.log(num3);
+      
+      
+      console.log(typeof(num1));
+      console.log(typeof num2);
+      
+
+      let num11 = 0b101;    //2진수 
+      let num12 = 0o73;     //8진수
+      let num13 = 0x2a;     //16진수
+
+
+      console.log(num11);
+      console.log(num12);
+      console.log(num13);
+      
+
+
+        
+
+  
+    </script>
+
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        
+    </script>
+
+</head>
+
+<body>
+        
+    <script type="text/javascript">
+       'ues strict'
+
+       //문자열
+       //문자
+       let str1 = "hello String";
+       let str2 = 'hello String';//"" '' 상관이없다.
+
+       console.log(str1);
+       console.log(str2);
+
+        
+        
+        let str3 = 'True';
+
+        console.log(typeof(str1));
+  
+    </script>
+
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Document</title>
+    
+    <script type="text/javascript">
+        
+    </script>
+
+</head>
+
+<body>
+        
+    <script type="text/javascript">
+       'ues strict'
+
+       //문자열
+       //문자
+       let str1 = "hello String";
+       let str2 = 'hello String';//"" '' 상관이없다.
+
+       console.log(str1);
+       console.log(str2);
+
+        
+        
+        let str3 = 'True';
+
+        console.log(typeof(str1));
+  
+    </script>
+
+
+</body>
+</html>

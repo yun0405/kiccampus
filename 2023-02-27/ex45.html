@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+
+  
+            
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+ 
+    transform: rotate(7200deg);
+    transition: transform 2s;
+}
+</style>
+<body style="text-align:center;">
+
+<h2>Basic Tooltip</h2>
+
+<p>빙글빙글</p>
+
+<div class="tooltip">툴팁 확인
+  <span class="tooltiptext">
+    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20230201_109%2F1675243148743WNgoA_JPEG%2F76379044468899359_500564286.jpg&type=a340"/></span>
+</div>
+
+<p>빙글빙글 돌아가는 짱구의 하루~</p>
+
+</body>
+</html>
