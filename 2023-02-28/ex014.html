@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.write('<table border="1" width ="150">');
+        document.write('<tr>');
+        document.write('<td>hello string</td>');
+        document.write('<tr>');
+        document.write('</table>');
+
+
+        //이 방법을 더 자주 쓴다. 
+        let html1 = '<table border="1" width ="150">';
+        html1 += '<tr>';
+        html1 += '<td>hello string</td>';
+        html1 += '<tr>';
+        html1 += '</table>';
+
+        document.write(html1);
+
+
+
+        //template 문자열
+        let html2 = `<table border="1" width ="150">
+                    <tr>
+                    <td>hello string</td>
+                    <tr>
+                    </table>`
+
+
+        document.write(html2);
+
+
+
+    </script>
+</body>
+
+</html>
