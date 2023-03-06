@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" width ="1000" cellpadding="0">
+        <tr>
+            <td width = "150" valign= "top">
+                <ul><!-- target 으로 보내줌 여기서는 child(iframe)-->
+                    <li><a  href="https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1=105" target="child">IT뉴스</a></li>
+                    <li><a  href="https://search.shopping.naver.com/book/search?bookTabType=BEST_SELLER&catId=50005561&pageIndex=1&pageSize=40&query=IT%EB%8F%84%EC%84%9C&sort=REL" target="child">IT도서</a></li>
+                </ul>
+
+            </td>
+            <td>
+                <!-- 공간을 확보-->
+                <iframe name = "child" src="https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1=105" width = "150%" height = "6000" frameborder="0"></a>
+            </td>
+
+        </tr>
+
+    </table>
+</body>
+</html>

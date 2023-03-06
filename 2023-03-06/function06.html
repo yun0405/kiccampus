@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+    
+    function dofunction(data1){
+        let result=0;
+       for(let i = 1 ;i<=data1;i++){
+        
+        result+=i;
+        
+       }
+       return result;
+    }
+    
+    
+
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+        let num =parseInt(prompt('몇까지 더할까요?'));
+        document.write(`1부터 ${num}까지 더하면 ${dofunction(num)} 입니다.`) ;
+
+    </script>
+</body>
+
+</html>

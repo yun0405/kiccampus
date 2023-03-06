@@ -1,0 +1,1089 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //1~100까지 2의 배수의 합을 구하시오
+        document.write('<table border="1" width ="300">');
+
+
+        for (let i = 1; i <= 10; i++) {
+            document.write('<tr>');
+
+            for (let j = 1; j <= 10; j++) {
+                document.write('<td>');
+                document.write('*');
+                document.write('</td>');
+            }
+
+            document.write('</tr>');
+        }
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //1~100까지 2의 배수의 합을 구하시오
+        document.write('<table border="1" width ="300">');
+
+
+        for (let i = 1; i <= 10; i++) {
+            document.write('<tr>');
+
+            for (let j = 1; j <= 10; j++) {
+                document.write('<td align ="center">');
+                    if(i>=j){     
+                    document.write('*');
+                 
+                }   
+                document.write('</td>');
+            }
+
+            document.write('</tr>');
+        }
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <!--css-->
+    <style type="text/css">
+        table{
+            width: 300px;
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            border:1px soild black;
+            text-align: center;
+        }
+   </style>
+   
+    <!--java script-->
+    <script type="text/javascript">
+        //1~100까지 2의 배수의 합을 구하시오
+        document.write('<table border="1" width ="300">');
+
+
+        for (let i = 1; i <= 10; i++) {
+            document.write('<tr>');
+
+            for (let j = 1; j <= 10; j++) {
+                document.write('<td>');
+                    if(i>=j){     
+                    document.write('*');
+                 
+                    }   
+                document.write('</td>');
+            }
+
+            document.write('</tr>');
+        }
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    <!--java script-->
+    <script type="text/javascript">
+        //1~100까지 2의 배수의 합을 구하시오
+        let result ='';
+        result +='<table border= "1" width="300">'
+       
+
+
+        for (let i = 1; i <= 10; i++) {
+            result +=('<tr>');
+
+            for (let j = 1; j <= 10; j++) {
+                result +=('<td>');
+                    if(i>=j){     
+                        result +=('*');
+                 
+                    }   
+                    result +=('</td>');
+            }
+
+            result +=('</tr>');
+        }
+            document.write(result);
+
+
+    </script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    <!--java script-->
+    <script type="text/javascript">
+        //1~100까지 2의 배수의 합을 구하시오
+        document.write('<table border="1" >');
+
+for ( i = 1; i <= 9; i++) {
+    document.write('<tr>');
+    
+   if(i>1){
+        for (let j = 1; j <= 9; j++) {
+        
+            if(j==1){
+                document.write('<td align ="center" width = "100">'+`x${i}`+`</td>`);
+            }else{
+                document.write('<td align ="center">'+`${j} x ${i} = ${j*i}`+'</td>');
+            }
+        }
+    }else{
+        for (let j = 1; j <= 9; j++) {
+            document.write('<td align ="center">');
+                if(j==1){
+                    document.write(``);
+                }else{
+                    document.write(`${j}단`);
+                }    
+            document.write('</td>');
+        }    
+    }
+    document.write('</tr>');
+}
+
+    </script>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    <!--java script-->
+    <script type="text/javascript">
+        //1~100까지 2의 배수의 합을 구하시오
+        document.write('<table border="1" >');
+
+for ( i = 0; i <= 9; i++) {
+    document.write('<tr>');
+    
+   if(i>0){
+        for (let j = 0; j <= 9; j++) {
+        
+            if(j==0){
+                document.write('<td align ="center" width = "100">'+`x${i}`+`</td>`);
+            }else{
+                document.write('<td align ="center">'+`${j} x ${i} = ${j*i}`+'</td>');
+            }
+        }
+    }else{
+        for (let j = 0; j <= 9; j++) {
+            document.write('<td align ="center">');
+                if(j==0){
+                    document.write(``);
+                }else{
+                    document.write(`${j}단`);
+                }    
+            document.write('</td>');
+        }    
+    }
+    document.write('</tr>');
+}
+
+    </script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    <!--java script-->
+    <script type="text/javascript">
+    let print ='';
+        print+=('<table border="1" >');
+
+for ( i = 0; i <= 9; i++) {
+    print+=('<tr>');
+    
+   if(i>0){
+        for (let j = 0; j <= 9; j++) {
+        
+            if(j==0){
+                print+=('<td align ="center" width = "100">'+`x${i}`+`</td>`);
+            }else{
+                print+=('<td align ="center">'+`${j} x ${i} = ${j*i}`+'</td>');
+            }
+        }
+    }else{
+        for (let j = 0; j <= 9; j++) {
+            print+=('<td align ="center">');
+                if(j==0){
+                    print+=(``);
+                }else{
+                    print+=(`${j}단`);
+                }    
+            print+=('</td>');
+        }    
+    }
+    print+=('</tr>');
+}
+    document.write(print);
+    </script>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    <!--java script
+    <script type="text/javascript">
+    console.log('시작');
+    let i=0;
+
+    while(i<10){
+            console.log('hello loop');
+            i++;
+    }
+    -->
+
+
+
+
+    <!--do while은 최소 한번은 실행된다.-->
+    <script type="text/javascript">
+        console.log('시작');
+        let i=0;
+        do{
+            console.log('hello loop');
+            i++;
+        }while(i<10);
+        console.log('끝');
+    
+    </script>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    console.log('시작');
+    let i=0;
+    
+    let pr ='';
+    pr+=('<table border="1" width ="300">');
+    do{
+        pr+=('<tr>');
+        let j=0;
+        do{
+            pr+=('<td>'+`${i}x${j}=${i*j}`+'</td>');
+            j++;
+        }while(j<10);
+        pr+=('</tr>');
+        i++;
+    }while(i<10)
+    pr+=('</table>');
+
+    document.write(pr);
+
+
+    
+    </script>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    console.log('시작');
+        for(let i = 1 ;i <=5 ; i++){
+            if(i ==3){
+
+                //break;  만나는 순간 멈추고 다음으로 진행 1,2
+                //continue;만나는 순간 이부분을 수행하지 않고 다음으로 진행 1,2,4,5
+            }
+            console.log(i);
+
+        }
+
+    console.log('끝');
+    
+
+    
+    </script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    console.log('시작');
+        aloop :
+        for(let i = 1 ;i <=5 ; i++){
+            for(let j = 1 ;j <=5 ; j++){
+                if(j==2){
+                   //break;//안쪽 for 문이 끝나버림
+                    continue aloop;// continue의 범위를 지정 aloop부분으로 나가서 바깥부분의 for문으로 나간다. == 브레이크
+                }
+                console.log(i + ' ' + j);
+            }
+
+        }
+
+    console.log('끝');
+    
+
+    
+    </script>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+    function dofunction1(){
+        console.log('hello function');
+
+    }
+
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+        dofunction1();
+        dofunction1();
+        dofunction1();
+        dofunction1();
+        dofunction1();
+    </script>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+    function dofunction1(){
+        console.log('hello function');
+        let num1 = 10;
+        console.log('hello function'+num1);
+    }
+    function dofunction2(data1){
+        console.log('fun2c' + data1);
+
+    }
+    function dofunction3(data1,data2){
+        console.log('fun3c:' + data1);
+        console.log('fun3c:' + data2);
+
+
+    }
+
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+        dofunction2(10);
+        dofunction3(10,20);
+        
+    </script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+    
+    function dofunction2(data1){
+       for(let i =1 ;i<=9;i++){
+        console.log(i+'*'+data1+'='+data1*i);
+
+       }
+
+    }
+    
+
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+        let data2 = prompt("구구단의 단수를 입력하세요"); 
+        dofunction2(data2);
+        
+        
+    </script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+    
+    function dofunction2(data1){
+       for(let i =1 ;i<=9;i++){
+        console.log(i+'*'+data1+'='+data1*i);
+
+       }
+
+    }
+    function dofunction3(data1,data2){
+       let sum = data1+ data2;
+
+
+       return sum;
+    }
+    
+
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+        let data1 =3; 
+        let data2 = 2;
+        let result =dofunction3(data1,data2);
+        console.log(result);
+        
+    </script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+    
+    function dofunction2(data1){
+       for(let i =1 ;i<=9;i++){
+        console.log(i+'*'+data1+'='+data1*i);
+
+       }
+
+    }
+    
+    function dofunction3(data1,data2){
+       let sum = data1+ data2;
+
+
+       return sum;
+    }
+    function dofunction4(data1){
+        let result='';
+       for(let i =1 ;i<=9;i++){
+        result+=(i+'*'+data1+'='+data1*i+'\n');
+
+       }
+       return result;
+    }
+
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+        let data1 =3; 
+        let data2 = 2;
+        let result =dofunction4(data1);
+        console.log(result);
+        
+    </script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+    
+    function dofunction(data1){
+        let result=0;
+       for(let i = 1 ;i<=data1;i++){
+        
+        result+=i;
+        
+       }
+       return result;
+    }
+    
+    
+
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+        let num =parseInt(prompt('몇까지 더할까요?'));
+        document.write(`1부터 ${num}까지 더하면 ${dofunction(num)} 입니다.`) ;
+
+    </script>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+    
+    function calc(num1 ,a,num2){
+        let result = 0;
+        if(a=='-'){
+            result = (num1 - num2);
+        }else if(a=='+'){
+            result = (num1 + num2);
+
+        }else if(a=='*'){
+            result = (num1 * num2);
+        }else if(a=='/'){
+            result = (num1 / num2);
+        } 
+       return result
+    }
+    
+    
+
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+       let num1 = parseInt(prompt('첫번째 숫자를 입력하세요'));
+       let a = prompt('연산자를 입력하세요 ( - , + , * , / )');
+       let num2 = parseInt(prompt('두번째 숫자를 입력하세요'));
+        console.log(calc(num1,a,num2)+'입니다.');
+    </script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+    
+    function calc(num1,num2){
+        let maxnum=0;
+        (num1>num2)?(maxnum = num1):(maxnum = num2);
+       return maxnum;
+    }
+    
+    
+
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+       let num1 = parseInt(prompt('첫번째 숫자를 입력하세요'));
+       let num2 = parseInt(prompt('두번째 숫자를 입력하세요'));
+        console.log('더 큰 숫자는 '+calc(num1,num2)+'입니다.');
+    </script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+    
+    function calc(num1,num2,num3){
+        let maxnum=0;
+        if(num1>num2){
+            if(num1>num3){
+                maxnum = num1;
+            }else{
+                maxnum = num3;
+            }   
+        }else{
+            if(num2>num3){
+                maxnum=num2;
+            }else{
+                maxnum=num3;
+            }
+        }
+       return maxnum;
+    }
+    
+    
+
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+       let num1 = parseInt(prompt('첫번째 숫자를 입력하세요'));
+       let num2 = parseInt(prompt('두번째 숫자를 입력하세요'));
+       let num3 = parseInt(prompt('세번째 숫자를 입력하세요'));
+        console.log('세개의 수 중 제일 큰 숫자는 '+calc(num1,num2,num3)+'입니다.');
+    </script>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #inner td{
+            width:150px;
+            border:1px dotted black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+    
+    function gugudan(num1){
+        let result ='<table id="inner">';
+        
+        for(let i =1 ; i<10;i++){
+            result+=('<tr>')
+            result+=('<td>'+num1+'*'+i+'='+i*num1 +'</td>');
+            result+=('</tr>')
+        }
+        result+='</table>'
+        return result;
+    }
+    function table(){
+
+        
+    }
+    
+
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+    document.write('<table border="1">');
+        for(let a = 1 ;a<=3;a++){
+            
+                document.write('<td>'+gugudan(a)+'</td>');
+          
+        }
+        
+        
+        document.write('<tr>');            
+        for(let a = 4 ;a<=6;a++){
+            
+                document.write('<td>'+gugudan(a)+'</td>');
+          
+        }document.write('</tr>');
+
+
+        document.write('<tr>');
+        for(let a = 7 ;a<=9;a++){
+            
+                document.write('<td>'+gugudan(a)+'</td>');
+          
+        }document.write('</tr>');
+    /*
+        let dan =1;
+        for(let row=1;row<=3;row++){
+            document.write('<tr>');
+                for(let col=1;col<=3;col++){
+
+                    document.write('<td>'+gugudan(dan)+'</td>')
+                    dan++;
+                }
+                document.write('<tr>');
+        }*/
+    document.write('</table>');
+    </script>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+       
+    </style>
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+    const dofunction1 = function(){
+            console.log('hello');
+        };
+    
+        let  dofunction2 = dofunction1;
+   
+
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+    dofunction1();
+
+    console.log(dofunction1);
+    console.log(typeof (dofunction1));
+
+    dofunction2();
+    </script>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+       
+    </style>
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+    const callback=function(){
+
+        console.log('함수 호출');
+
+    }
+
+    const callFunc = function(data){
+        //시스템이 호출하는 함수 : 콜백 함수
+        data();
+    }
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+        callFunc(callback);
+    </script>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+       
+    </style>
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+        const rfunc = function(){
+            return function(){
+                console.log('hello function');
+            }
+        }
+        const rfunc2= function(type){
+
+            if(type==1){
+                return function(){
+                    console.log('함수1 형태 호출');
+                }
+            }else{
+                return function(){
+                    console.log('함수2 형태 호출');
+                }
+
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+        let result = rfunc();
+        result();
+        //아래와 같이 사용해도 위에랑 같은 뜻이다.
+        rfunc()();
+        rfunc2(1)();
+        rfunc2(10)();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    <!--java script-->
+    <script type="text/javascript">
+    let print ='';
+        print+=('<table border="1" >');
+
+for ( i = 0; i <= 9; i++) {
+    print+=('<tr>');
+    
+   if(i>0){
+        for (let j = 0; j <= 9; j++) {
+        
+            if(j==0){
+                print+=('<td align ="center" width = "100">'+`x${i}`+`</td>`);
+            }else{
+                print+=('<td align ="center">'+`${j} x ${i} = ${j*i}`+'</td>');
+            }
+        }
+    }else{
+        for (let j = 0; j <= 9; j++) {
+            print+=('<td align ="center">');
+                if(j==0){
+                    print+=(``);
+                }else{
+                    print+=(`${j}단`);
+                }    
+            print+=('</td>');
+        }    
+    }
+    print+=('</tr>');
+}
+    document.write(print);
+    </script>
+</body>
+
+</html>

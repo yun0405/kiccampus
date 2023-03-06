@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+       
+    </style>
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+        const rfunc = function(){
+            return function(){
+                console.log('hello function');
+            }
+        }
+        const rfunc2= function(type){
+
+            if(type==1){
+                return function(){
+                    console.log('함수1 형태 호출');
+                }
+            }else{
+                return function(){
+                    console.log('함수2 형태 호출');
+                }
+
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+        let result = rfunc();
+        result();
+        //아래와 같이 사용해도 위에랑 같은 뜻이다.
+        rfunc()();
+        rfunc2(1)();
+        rfunc2(10)();
+    </script>
+</body>
+
+</html>
