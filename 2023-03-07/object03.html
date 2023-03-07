@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        
+        class Student1{
+
+            //초기화
+            constructor(){
+                this.name = '홍길동';
+                this.kor = 90;
+                this.mat = 92;
+            }
+
+            //메소드 선언
+            getSum(){
+                console.log('getSum 호출',this.name);
+                console.log('getSum 호출',this.kor);
+                console.log('getSum 호출',this.mat);
+            }
+        }     
+        let stu1=new Student1();
+
+
+        stu1.getSum();
+    </script>
+</body>
+</html>

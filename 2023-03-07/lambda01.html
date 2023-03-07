@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+       
+    </style>
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+        const dofunc = function(){
+            console.log('함수1 형태 호출');
+        }
+        const dofunc1 = () =>{
+            console.log('함수2 형태 호출');
+        }
+        const dofunc2 = (one) =>{
+            console.log('함수3 형태 호출'+one);
+        }
+        const dofunc3 = (one,two) =>{
+            return one + two;
+            
+        }
+        const dofunc4 = (one,two) => one + two;
+            
+        
+        
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+        
+       //익명함수
+        dofunc();
+        //화살표 함수
+        dofunc1();
+
+        dofunc2(10);
+        console.log('함수4 형태 호출'+dofunc3(10,20));
+        console.log('함수5 형태 호출'+dofunc4(10,200));
+        
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        //선언부분
+        
+    </script>
+</head>
+
+<body>
+
+    
+
+    <script type="text/javascript">
+        //실행부분
+       let data1 = '10';
+       let data2 = '20';
+        //문자열의 연결
+       let sum = data1+data2;
+        //형변환을 통한 숫자의 합
+       let num = Number(data1)+Number(data2);
+
+        
+       console.log(sum);//1020
+       console.log(num);//30
+
+       let data3 = '10일';
+        //NaN : not a number
+       //console.log(Number(data3));
+
+
+       //숫자만 추출하여 출력 if data3가 '10일'이 아니라 '일10' 이였다면 오류가 발생
+       console.log(parseInt(data3));
+
+        //실수화
+       console.log(parseFloat(data3));
+       
+       
+       //isNaN - 숫자가 아닌지를 bool형으로 판별 
+       console.log(isNaN('1'));
+       console.log(isNaN('1e'));
+       console.log(isNaN('e1'));
+        
+
+       if (isNaN(1)){
+        console.log("이것은 숫자가 아닙니다.");
+       }else{
+        console.log("이것은 숫자입니다.");
+       }
+    </script>
+</body>
+
+</html>

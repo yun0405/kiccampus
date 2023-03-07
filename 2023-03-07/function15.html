@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        //선언부분
+        //scope : 선언이 영향을 미치는 영역
+        //전역함수
+        let one = 100;
+        var two = 200;
+
+
+
+        const dofunc = function () {
+            //지역함수
+            let one = 101;
+            var two = 202;
+            console.log('function1 호출:' + one);
+            console.log('function2 호출:' + two);
+        };
+
+
+
+        console.log('function3 호출:' + one);
+        console.log('function4 호출:' + two);
+
+    </script>
+</head>
+
+<body>
+
+    
+
+    <script type="text/javascript">
+        //실행부분
+        dofunc();
+
+
+    </script>
+</body>
+
+</html>

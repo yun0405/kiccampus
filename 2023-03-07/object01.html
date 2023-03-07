@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        //student 클래스 선언
+        class Student1{
+            
+
+        }
+        
+        class Student2{
+            //속성 - 변수 - 멤버변수(상수)
+            //기능 - 함수 - 메서드
+
+            //생성자(특수 함수) 생성할때 사용 - 멤버변수의 초기화
+            constructor(){
+                this.name = '홍길동';
+                this.kor = 90;
+                this.mat = 92;
+            }
+
+
+
+
+        }
+        //stu1 객체변수(인스턴스) 선언
+        //new 메모리 생성 연산자
+        let stu1 = new Student1();
+
+        //. - 메모리 참조 연산자
+        console.log(typeof stu1);
+        let stu2 = new Student2();
+
+        console.log(stu2.name);
+        console.log(stu2.mat);
+        console.log(stu2.kor);
+        
+
+        stu2.name = '박문수';
+        stu2.kor = 900;
+
+        console.log(stu2.name);
+        console.log(stu2.kor);
+
+        //얕은 복사
+        let stu3 = stu2;
+
+        console.log(stu3.name);
+        console.log(stu3.kor);
+
+        
+    </script>
+</body>
+</html>

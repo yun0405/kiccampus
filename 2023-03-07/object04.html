@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        
+        class book2{
+
+            //초기화
+            constructor(title,pages,done){
+                this.title = title;
+                this.pages = pages;
+                this.done = done;
+            }
+
+            finish(){
+            
+                let str='';
+                this.done ===false ? str = "읽는중":str="완독";
+                return str;
+
+            }
+        }     
+
+        let book1 = new book2("전독시",1863,true);
+        let book = new book2("집에가고싶다",8282,false);
+
+        console.log(`${book1.title}-${book1.pages}-${book1.finish()}`);
+        console.log(`${book.title}-${book.pages}-${book.finish()}`);
+
+
+
+       
+        
+    </script>
+</body>
+</html>
