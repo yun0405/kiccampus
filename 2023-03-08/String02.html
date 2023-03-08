@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script type="text/javascript">
+          //문자열 객체 변수
+          let str1 = 'hello String 안녕 String';
+
+          //문자열의 길이
+          console.log(str1.length); //22
+
+          //문자분리
+          console.log(str1[0]);
+          console.log(str1.charAt(0));//위와 동일
+         
+          console.log(str1[str1.length -1]);//마지막 글자 출력
+
+          //문자열 분리 :substr1 / substring / slice
+          console.log(str1.substr(6));//6부터 끝까지
+          console.log(str1.substr(6,6));//6부터 6까지 (~부터 ~까지)
+          console.log(str1.substring(6,12));//6부터 12전까지 == slice
+          //console.log(str1.slice(6,12));//6부터 12전까지
+
+          //안녕
+          console.log(str1.substr(13,2));
+          console.log(str1.substring(13,15));
+
+          //문자열 검색 - 위치
+
+          console.log(str1.indexOf('l'));//2번째 위치[h][e][l이 자리][l]
+          console.log(str1.indexOf('s'));// -1 문자열이 없음
+          console.log(str1.indexOf('S',7));// 7번째 자리부터 찾기 시작 7~
+
+
+
+          console.log(str1.lastIndexOf('S'));//뒤에서부터 찾는다.\
+
+
+          console.log(str1.search('S'));// 6 
+
+          //include / startsWith / endsWith
+          
+          //대소문자 변환
+          console.log(str1.toUpperCase()); //대문자로 변환
+          console.log(str1.toLowerCase()); //소문자로 변환
+          console.log('abc'.toUpperCase()); //대문자로 변환
+
+          let str2 = 'abc'.toUpperCase();
+
+            console.log(str2);
+
+
+          //문자열 치환
+          console.log(str1.replace('hello','안녕'));
+
+
+          //문자열 결합
+          console.log(str1+ 'hello dkssud');
+          console.log(str1.concat('안녕','1','ㅁㄴㅇㅁㄴㅇ') );
+
+
+
+
+
+    </script>
+</body>
+</html>

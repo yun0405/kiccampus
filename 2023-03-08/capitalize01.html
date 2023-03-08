@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        //선언
+          //let str1 = 'hong gil dong';
+          let str1 = prompt('영어를 입력하세요','hong gil dong');
+          let str2 ='';
+          //띄어 쓰기로 분리
+          let arr1 = str1.split(' '); //arr1 = [hong],[gil],[dong]
+            
+            //첫글자만 대문자화
+            for(let i in arr1){
+              for(let j in  arr1[i]){
+                if(j==0){
+                  str2+=arr1[i][j].toUpperCase();
+                }else{
+                  str2+=arr1[i][j];
+                }
+               
+              } str2+=' '; //띄어 쓰기
+            }
+            //출력
+            console.log(str2);
+          /*강사님이 짠 코드
+            for (let word of arr1){
+              str2 += word.substring(0,1).toUpperCase()+word.substring(1)  
+            }
+          */  
+    </script>
+</body>
+</html>

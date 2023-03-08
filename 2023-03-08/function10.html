@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #inner td{
+            width:150px;
+            border:1px dotted black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    //선언부분
+    
+    function gugudan(num1){
+        let result ='<table id="inner">';
+        
+        for(let i =1 ; i<10;i++){
+            result+=('<tr>')
+            result+=('<td>'+num1+'*'+i+'='+i*num1 +'</td>');
+            result+=('</tr>')
+        }
+        result+='</table>'
+        return result;
+    }
+    function table(){
+
+        
+    }
+    
+
+    </script>
+
+    <script type="text/javascript">
+    //실행부분
+    document.write('<table border="1">');
+        for(let a = 1 ;a<=3;a++){
+            
+                document.write('<td>'+gugudan(a)+'</td>');
+          
+        }
+        
+        
+        document.write('<tr>');            
+        for(let a = 4 ;a<=6;a++){
+            
+                document.write('<td>'+gugudan(a)+'</td>');
+          
+        }document.write('</tr>');
+
+
+        document.write('<tr>');
+        for(let a = 7 ;a<=9;a++){
+            
+                document.write('<td>'+gugudan(a)+'</td>');
+          
+        }document.write('</tr>');
+    /*
+        let dan =1; 밖에서 단을 호출 
+        for(let row=1;row<=3;row++){ 3*3배열을 만듦
+            document.write('<tr>');
+                for(let col=1;col<=3;col++){
+
+                    document.write('<td>'+gugudan(dan)+'</td>')
+                    dan++;
+                }
+                document.write('<tr>');
+        }*/
+    document.write('</table>');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+      
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+          let obj = new Object();
+
+            //object 객체 세부 정의 내용
+            console.log(obj);
+            // toString() - 내부(멤버변수) 내용 문자열로 출력
+            console.log(obj.toString());
+
+
+            //상속
+            let student = {
+                    name : '홍길동',
+                    grade: '1학년',
+                //★재선언 내부에서 변경하여 선언가능 (Object에 없는 것도 가능))
+                toString:function(){
+
+                    return this.name + ':'+this.grade;
+                }
+            }
+
+            console.log(student);
+            console.log(student.toString());
+            //console.log(student.askjdalksjd()); object에 선언이 안되어 있으면 오류가 발생
+    </script>
+</body>
+</html>

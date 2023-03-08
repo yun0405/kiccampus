@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body> 
+    
+    <script type="text/javascript">
+    console.log('시작');
+        aloop :
+        for(let i = 1 ;i <=5 ; i++){
+            for(let j = 1 ;j <=5 ; j++){
+                if(j==2){
+                   //break;//안쪽 for 문이 끝나버림
+                    continue aloop;// continue의 범위를 지정 aloop부분으로 나가서 바깥부분의 for문으로 나간다. == 브레이크
+                }
+                console.log(i + ' ' + j);
+            }
+
+        }
+
+    console.log('끝');
+    
+
+    
+    </script>
+</body>
+
+</html>
