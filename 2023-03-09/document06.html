@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+       
+
+    </script>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        //이벤트
+
+       
+        
+
+        const checkfrm = () => {
+
+            
+
+            let str1 = document.frm1.data1.value;
+            let str2 ='';
+            //띄어 쓰기로 분리
+             let arr1 = str1.split(' '); //arr1 = [hong],[gil],[dong]
+            
+            //첫글자만 대문자화
+            for(let i in arr1){
+              for(let j in  arr1[i]){
+                if(j==0){
+                  str2+=arr1[i][j].toUpperCase();
+                }else{
+                  str2+=arr1[i][j];
+                }
+               
+              } str2+=' '; //띄어 쓰기
+            }
+            //출력
+            document.frm1.data2.value=str2;
+            
+                
+            };
+    
+        
+        </script>
+
+    <form name="frm1" action="test1.html"> <!-- action="test1.html" 전송을 보낼곳 전송이 아니라면 굳이 필요는 없다-->
+        data1 : <input type="text" name = 'data1' /><br/><br/>
+        <input type="button" value="내용읽기" onclick="checkfrm()"/>
+        data2 : <input type="text" name = 'data2' readonly /><br/><br/>
+
+        
+      
+        
+    </form>
+   
+    
+
+    
+    
+   
+</body>
+</html>

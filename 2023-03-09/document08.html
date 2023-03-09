@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+       
+
+    </script>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        //체크박스 라디오 박스 
+
+       
+        
+
+        const checkfrm = () => {
+
+            
+
+               if(document==document.frm1.cd1.checked){
+                console.log(document.frm1.cd1.checked);
+                console.log(document.frm1.cd1.value);
+                }
+               if(document==document.frm1.cd2.checked){
+                console.log(document.frm1.cd2.checked);
+                console.log(document.frm1.cd2.value);
+                }
+               if(document==document.frm1.cd3.checked){
+                console.log(document.frm1.cd3.checked);
+                console.log(document.frm1.cd3.value);
+                }
+               if(document==document.frm1.cd4.checked){
+                console.log(document.frm1.cd4.checked);
+                console.log(document.frm1.cd4.value);
+                }
+
+
+                
+               
+               
+            };
+    
+        
+        </script>
+
+    <form name="frm1" action="test1.html"> <!-- action="test1.html" 전송을 보낼곳 전송이 아니라면 굳이 필요는 없다-->
+        data1 : <input type="checkbox" name = 'cd1' value="사과"/>사과<br/><br/>
+        data1 : <input type="checkbox" name = 'cd2' value="딸기" checked/>딸기<br/><br/>
+        data1 : <input type="checkbox" name = 'cd3' value="수박"/>수박<br/><br/>
+        data1 : <input type="checkbox" name = 'cd4' value="참외"/>참외<br/><br/>
+        
+       
+       <input type="button" value="내용읽기" onclick="checkfrm()"/>
+      
+        
+    </form>
+   
+    
+
+    
+    
+   
+</body>
+</html>

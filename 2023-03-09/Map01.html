@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title> 
+    <script type="text/javascript"> 
+    </script>
+    
+</head>
+<body>
+    <script type="text/javascript">
+     const map =new Map();
+
+     console.log(map);
+
+
+     const map1 = new Map([
+            ['key1','value1'],
+            ['key2','value2'],
+            ['key3','value3'],
+            ['key4','value4']   
+            ]
+        );
+
+     console.log(map1);
+     console.log(map1.size);
+        
+     const map2=[
+        {key:1,value1:10},
+        {key:2,value1:20},
+        {key:3,value1:30}
+     ]
+     console.log(map2);
+     console.log(map2.length);
+
+     //console.log(map1[0]);//얘도 배열처럼 사용되었지만 배열이 아니기 때문에 이런식으로 불러올수없다.
+     for(let data of map1){
+
+        console.log(data[0],data[1]);
+    
+        }
+
+     for(let [key,value] of map1){
+
+        console.log(key,value);
+        }
+
+
+        
+    </script>
+</body>
+</html>

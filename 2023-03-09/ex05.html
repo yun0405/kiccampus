@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex01</title>
+  
+    <script type="text/javascript">
+
+      
+
+      class Util{
+          constructor(ju){
+
+            this.ju =ju;
+          }
+        //주민등록번호 카운트
+        test = (arra, arrb) => {
+          let count = 0;
+          for (let i in arr1) {
+            for (let j in arr1[i]) {
+
+              count += arr1[i][j] * min[i][j];
+
+            }
+          }
+          //참거짓 분별
+          let a = (11 - (count % 11)) % 10;
+
+          //값 보내줌
+          if (a == arr1[1][6]) {
+            return true;
+          } else {
+            return false;
+          }
+
+
+        }
+      }
+
+     
+    </script>
+    
+</head>
+<body>
+    <script type="text/javascript">
+      //선언
+      let jumin =[];
+      let min = [   
+        [2,3,4,5,6,7],
+        [8,9,2,3,4,5,0] 
+      ] 
+      let check = new Util;
+     
+      
+      //입력
+      let ju = prompt("주민등록 번호를 입력하세요",'123456-1234567')
+
+      //주민등록번호 추출
+      let arr1 = ju.split('-');
+      
+      
+   
+
+      //출력
+      if(check.test(arr1,min)){
+        console.log('형식이 맞음');
+      }else{
+        console.log('형식이 틀림');
+      }
+      
+    </script>
+    
+    
+</body>
+</html>

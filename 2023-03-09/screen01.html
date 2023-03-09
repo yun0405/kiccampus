@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>screen</title> 
+    <script type="text/javascript"> 
+    </script>
+    
+</head>
+<body>
+    <script type="text/javascript">
+       
+        const gourl=(url)=>{
+            let width = 600;
+            let height =800;
+            let left = screen.width/2-width/2;
+            let top =screen.height/2-height/2;
+
+            let option = `top=${top},left = ${left}width=${width}height=${height}`;
+
+            window.open(url,'winopen',option)
+           
+        }
+        <a href="javascript:gourl(http://www.naver.com)">로또 번호 생성기</a>
+    </script>
+    
+</body>
+</html>

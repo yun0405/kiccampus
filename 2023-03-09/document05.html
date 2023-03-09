@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+       
+
+    </script>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        //이벤트
+
+       
+        
+
+        const checkfrm = () => {
+
+                console.log(document.frm1.data1);
+                console.log(document.frm1.data1.value);
+                console.log(document.frm1.data2.value);
+               
+            };
+    
+        
+        </script>
+
+    <form name="frm1" action="test1.html">
+        data1 : <input type="text" name = 'data1' value="값1"/><br/><br/>
+        data2 : <input type="text" name = 'data2' value="값2"/><br/><br/>
+
+        <input type="button" value="form 내용읽기"onclick="checkfrm()"/>
+      
+        
+    </form>
+   
+    
+
+    
+    
+   
+</body>
+</html>

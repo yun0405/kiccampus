@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript"> 
+    const changTitle=(title)=>{
+        document.title =title;
+    }
+
+    </script>
+    
+</head>
+<body>
+    <script type="text/javascript">
+    
+       document.write('hello Script!');
+       document.bgColor="bulegreen"
+
+       console.log(document.title);
+       document.title='새로운 문서';
+       console.log(document.title);
+       //버튼을 누르면 프롬프트 창을 띄우고 색상값을 넣으면 배경이 바뀌는 프로그램
+    </script>
+ 
+    <button onclick="changTitle('제목1')">제목1</button>
+    <button onclick="changTitle('제목2')">제목2</button>
+</body>
+</html>

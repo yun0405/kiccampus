@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+       
+
+    </script>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        const checkfrm=()=>{
+           
+            if( document.frm1.sel.value=='naver' ){
+                open("https://search.naver.com/search.naver?&query="+document.frm1.query.value)
+            }else if( document.frm1.sel.value='daum' ){
+                open("https://search.daum.net/search?&q="+document.frm1.query.value)
+            }
+            
+            
+            
+        }
+
+        
+    </script>
+
+    <form name="frm1"action=""> 
+        검색어: <input type="text" name="query" placeholder="검색어 입력"/><br/><br/>
+        검색사이트: <select name="sel" >
+                        <option value="naver">네이버</option>
+                        <option value="daum">다음</option>
+                        
+                    </select>
+
+       <input type="button" value="검색하기" onclick="checkfrm()"/><br/><br/>
+       
+     
+      
+        
+    </form>
+   
+    
+
+    
+    
+   
+</body>
+</html>
