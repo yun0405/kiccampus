@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        const cratetable=()=>{
+           
+
+            let html = '<table border="1"><tr><td>1열</td><td>2열</td><td>3열</td></tr></table>'
+            let h1 = document.querySelector('#result');
+            h1.innerHTML = html;
+        };
+        const deletetable=()=>{
+            let h1 = document.querySelector('#result');
+            h1.innerHTML = ' ';//삭제처럼 사용할수있다.
+        };
+        
+
+    </script>
+</head>
+<body>
+
+    <input type="button" value = "table 추가" onclick="cratetable()"/>
+    <input type="button" value = "table 삭제" onclick="deletetable()"/>
+    <br/><hr/><br/>
+    <div id="result"></div>
+    
+</body>
+</html>

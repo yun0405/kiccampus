@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+           
+            
+   </style>  
+    <script type="text/javascript">
+        const click1=()=>{
+                alert('click 호출');
+
+        }
+        window.onload =()=>{
+
+            document.getElementById('btn1').onclick=()=>{
+
+                alert('click2 호출');
+            }
+            document.getElementById('div').onclick=()=>{
+
+                alert('click2 호출');
+            }
+            document.getElementById('h1').onclick=()=>{
+
+                alert('click2 호출');
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="frm"> 
+        
+        <input type="button" value="호출" onclick="click1()"/>
+        <input type="button" id="btn1" value="호출" onclick="click1()"/>
+         
+
+        <div id="div">나도 클릭</div>
+        <h1 id="h1">나도 클릭</h1>
+    </form>
+    
+    
+</body>
+</html>

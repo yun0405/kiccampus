@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        const viewTag=()=>{
+            //id를 통해 가져오기 
+            let h1=document.getElementById('h1');
+            console.log(h1);
+            //tagname으로 가져오기
+            //여러개를 가져오기 때문에 배열로 저장된다.
+            let h2s =document.getElementsByTagName('h2');
+            console.log(h2s);
+            console.log(h2s.length);
+            console.log(h2s[0]);
+            
+            for (let i = 0 ; i <h2s.length ;i++){
+                console.log(h2s[i]);
+            }
+            for (let i in  h2s){
+                console.log(h2s[i]);
+            }
+            for (let i of  h2s){
+                console.log(i);
+            }
+        };
+
+    </script>
+</head>
+<body>
+
+    <input type="button" value = "tag보기" onclick="viewTag()"/><br/><hr/><br/>
+    <h2 id="h1">Header1</h2>
+    <h2 id="h2">Header2</h2>
+    <h2 id="h3">Header3</h2>
+</body>
+</html>

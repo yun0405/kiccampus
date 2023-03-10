@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+            td{
+                width: 300px;
+                text-align: center;
+            }
+            
+   </style>  
+    <script type="text/javascript">
+        //시작단과 끝단을 입력하고 버튼을 통해 그에 맞는 구구단 테이블을 출력한다
+       
+        const cal=()=>{
+            let num1 = document.frm.num1.value;
+            let num2 = document.frm.num2.value;
+            let html = '';
+                for(num1;num1<=num2;num1++){
+                    html += '<table border="1">';
+                        html +='<tr>';
+                        for(let j=1;j<10;j++){
+                            html += '<td>'+ num1 +' x '+ j +' = '+ num1*j +'</td>'
+                        }
+                        html +='</tr>';
+                    html+='</table>';
+                }
+                
+            let h1 = document.querySelector('#result');
+            h1.innerHTML = html;
+        }
+
+    </script>
+</head>
+<body>
+    <form name="frm"> 
+        시작단수 <input type="text" name="num1"/>
+        
+        ~ 끝 단수<input type="text" name="num2"/>
+       
+        <input type="button" value="구구단 출력" onclick="cal()"/><br/><br/>
+         
+    </form>
+    
+    <div id="result"></div>
+</body>
+</html>

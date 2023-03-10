@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        const viewTag=()=>{
+            //querySelector() - id
+            //querySelectorAll() - tag,class
+
+            let h1 = document.querySelector('#h1');
+            console.log(h1.innerHTML);//header1이 출력된다. 
+            console.log(h1.textContent);//html태그를 제거 시킨다.
+
+            let h3 = document.querySelector('#h3');//header1이 출력된다. 
+            console.log(h3.innerHTML);
+            console.log(h3.textContent);//<i>header3</i> -> header3 html태그를 제거
+        };
+        const modifyContent=()=>{
+            let h1 = document.querySelector('#h1');
+            h1.innerHTML = '<i>Change Html</i>';
+        };
+        const deleteContent=()=>{
+            let h1 = document.querySelector('#h1');
+            h1.innerHTML = ' ';//삭제처럼 사용할수있다.
+        };
+
+    </script>
+</head>
+<body>
+
+    <input type="button" value = "tag보기" onclick="viewTag()"/><br/><hr/><br/>
+    <input type="button" value = "tag수정" onclick="modifyContent()"/><br/><hr/><br/>
+    <input type="button" value = "tag수정" onclick="deleteContent()"/><br/><hr/><br/>
+    <h2 id="h1" class='c1'>Header1</h2>
+    <h2 id="h2" >Header2</h2>
+    <h2 id="h3" calss = 'c1'>
+        <i>Header3</i>
+    </h2>
+</body>
+</html>

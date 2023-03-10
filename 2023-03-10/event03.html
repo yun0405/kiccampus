@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+           #div{
+
+                width:200px;
+                height: 200px;
+                border: 1px solid black;
+           };
+            
+   </style>  
+    <script type="text/javascript">
+        //mouse 이벤트
+        window.onload=()=>{
+                let count=0;
+            document.getElementById('div').onclick=()=>{
+                    console.log('click');
+
+            };
+            document.getElementById('div').onmouseover=()=>{
+                    console.log('어서와'+ count);
+                    count++;
+
+            };
+            document.getElementById('div').onmouseout=()=>{
+                    console.log('돌아와'+ count);
+                    count++;
+
+            };
+        };
+        
+    </script>
+</head>
+<body>
+    <div id="div"></div>
+    
+    
+</body>
+</html>

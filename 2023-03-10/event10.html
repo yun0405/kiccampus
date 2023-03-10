@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+          
+            
+   </style>  
+    <script type="text/javascript">
+     //버튼을 눌러서 count하는 event
+        window.onload=()=>{
+            let btn1= document.getElementById('btn1');
+            let btn2= document.getElementById('btn2');
+
+            btn1.onclick = function(){
+
+               count1.innerHTML =parseInt(count1.innerHTML)+1;
+               
+            };
+            btn2.onclick = function(){
+                count2.innerHTML =parseInt(count2.innerHTML)+1;
+                btn1.onclick();
+            };
+
+        }
+            
+    </script>
+</head>
+<body>
+    
+    <button id="btn1">클릭</button>
+    <button id="btn2">클릭</button>
+    <br/><br/><br/>
+    <h1>button1 - <span id="count1">0</span></h1>
+    <h1>button2 - <span id="count2">0</span></h1>
+    
+</body>
+</html>

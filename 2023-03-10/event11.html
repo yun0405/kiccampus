@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+          
+            
+   </style>  
+    <script type="text/javascript">
+
+        //오른쪽 마우스를 비활성화하는 코드
+     window.addEventListener('contextmenu',function(e){
+        e.preventDefault();
+        alert('오른쪽 마우스 벤 ㅅㄱ')
+
+     })
+       
+            const checkfrm1=()=>{
+
+              
+                if(document.frm1.id.value==''){
+                    alert('아이디가 없습니다.');
+                    return false;
+                }
+            }
+        
+            
+    </script>
+</head>
+<body>
+    
+    <form action="test.html" name="frm1" method="get" onsubmit="return checkfrm1()">
+        아이디<input type="text" name="id" id="id"/>
+        <!--submit:전송이 가능한 기본 이벤트-->
+        <input type="submit" value="전송"/>
+        <input type="button" value="전송"/>
+
+    </form>
+    
+</body>
+</html>

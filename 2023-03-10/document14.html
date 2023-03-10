@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script type="text/javascript">
+        const cal=()=>{
+            let num1 = document.frm.num1.value;
+            let num2 = document.frm.num2.value;
+
+            if(num1 == '' || num2 ==''){
+                alert('num1과 num2 값을 입력하셔야 합니다.');
+            }else{
+                let oper = document.frm.oper.value;
+
+                let inum1=parseInt(num1);
+                let inum2=parseInt(num2);
+
+                let result = 0;
+                switch(oper){
+                  case '+':
+                    result = inum1 + inum2;
+                    break;
+                  case '-':
+                    result = inum1 - inum2;
+                    break;
+                  case 'x':
+                    result = inum1 * inum2;
+                    break;
+                }
+                document.frm.result.value = result;
+            }
+        };
+    </script>
+</head>
+<body>
+    <form name="frm"> 
+        <input type="text" name="num1"/>
+        <select name="oper">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="x">x</option>
+        </select>
+        <input type="text" name="num2"/>
+        =
+        <input type="button" value="Calculate" onclick="cal()"/><br/><br/>
+        <input type="text" name="result" />   
+    </form>
+</body>
+</html>
