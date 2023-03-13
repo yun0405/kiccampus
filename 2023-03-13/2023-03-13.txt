@@ -1,0 +1,78 @@
+프로그램 언어
+	컴파일 언어
+		소스 -> 컴파일 ->실행파일 ->실행
+		실행 속도  	-산업
+		c/c++/java
+	
+	스크립트 언어 
+		소스 -> 실행
+		코딩이 편리	-교육
+		javascript / python
+
+
+c	-실행속도가 가장 빠르다
+	-os
+	
+java	-c보다 개발을 편리하게
+python 	-데이터 분석
+
+java 
+	=jdk 버전
+	=java development kit
+		개발분야 
+			java se			-core
+			java ee(enterprise edition)	-기업용 기능 추가
+						se + 라이브러리 추가
+
+			java me(embeded)		-경량버전
+
+	jdk
+		jre(java run time enviroment)
+			시스템 라이브러리
+			jvm(java virtual machine)
+		개발용 도구
+
+jdk - oracle
+	선 마이크로 시스템즈 - open Source
+	oracle JDK
+	OpenJDK
+		https://openjdk.org/
+
+
+소스 
+	-메모장
+	-Visual Studio Code
+	-IDE
+
+		-eclipse(전통)
+		-intellij(최신)
+
+JAVA
+	
+변수의 선언 방법
+	자료형 변수명
+
+상수 선언 방법
+	final 자료형 변수명
+		
+
+프로젝트
+
+	기획-문서로 제출
+		ppt(일반적으로 많이 씀)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
